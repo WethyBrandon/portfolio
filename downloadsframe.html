@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+                color: white;
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.open('https://steamcommunity.com/sharedfiles/filedetails/?id=759628723','_blank'); }, 1200);
+            }
+            function delayNav6(){
+                setTimeout(function(){ window.open('https://www.moddb.com/mods/star-trek-continuum/downloads/star-trek-continuum-release-gamma','_blank'); }, 1200);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.open('https://www.moddb.com/mods/star-trek-continuum-remastered/downloads/stcr-installer','blank'); }, 1200);
+            }
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <div class="lcars_iframe2">
+                        </div>
+                        <br>
+                        <div class="title"><p>STAR TREK: CONTINUUM MOD DOWNLOADS:</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                           Available Mod Locations:
+                        </h1>
+                        <p>
+                            Listed below are available locations for downloading the current and classic releases of the ST: Continuum mod.
+                        </p>
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/steam.png" alt="Steam Logo" style="border: 2px solid silver">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="STEAM" onclick="play2();delayNav5();" style="background-color: rgb(153,168,255)">
+                                            <audio id="beep2" src="sounds/helm.wav"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/moddb.png" alt="MODDB Logo" style="border: 2px solid red">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="CLASSIC/MODDB" onclick="play2();delayNav6();" style="background-color: rgb(153,168,255)">
+                                            <audio id="beep2" src="sounds/helm.wav"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/gog.png" alt="Good Ol' Games Logo" style="border: 2px solid rgb(153,168,255)">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="GOOD OL' GAMES" onclick="play2();delayNav7();" style="background-color: rgb(153,168,255)">
+                                            <audio id="beep2" src="sounds/helm.wav"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+           </div> 
+        </body>
+</html>
+        

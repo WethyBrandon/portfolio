@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <title>
+    CodePen - JavaScript - Slide from one page to the next ( Left and right)
+  </title>
+   <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="screenplay.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+<style>
+.box {
+  height: 800px;
+  width: 620px;
+}
+</style>
+  <script>
+
+function btnEdit()
+    {
+        document.getElementById("save").style.visibility="visible";
+    }
+    function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+    }
+    function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+    }
+    function delayNav(){
+                setTimeout(function(){ window.location.assign('screenplayframe.html'); }, 800);
+            }
+</script>
+
+
+</head>
+    <body translate="yes" >
+      <div class="description">
+        <div class="title"><p style="color: rgb(255, 144, 0);">THE GUEST HOUSE</p><img src="images/divider.gif" alt="divider"></div>
+         <p>
+          <i>The Guest House</i> is a psychological thriller set in a distant future. The movie starts with a mysterious underground facility and an amnesiac "guest". We follow the "guest" as she tries to live her life the best she can while confined to the corridors of the strangely vacant facility. Once she is on the edge of madness she finds an unlikely companion, a lost little girl that cannot speak. The two continue to try to find a way out and survive. Until a mysterious black-out threatens to seal their fate. Can they solve the mysteries of "The Guest House" and escape? 
+         </p>
+         <button id="save" style="position: relative; visibility: hidden; background: red; font-size: 25pt; font-family: 'Swiss911', sans-serif; height: 50px; width: 140px; border-radius: 50px; color: black;" onClick="slide('prev');play2();btnSave();">PREVIOUS</button>
+         <audio id="beep2" src="sounds/beep_38.mp3"></audio>
+         <button id="edit" style="margin-top: 50px; margin-left: 80px; background: red; font-size: 25pt; font-family: 'Swiss911', sans-serif; height: 50px; width: 140px; border-radius: 50px; color: black;" onClick="slide('next');play2();btnEdit();">NEXT</button>
+         <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+         <center>
+          <figcaption>
+                  <input type="button" class="list_button" value="RETURN" onclick="play1();delayNav();" style="font-size: 25pt; margin-top: 30px; background-color: rgb(189,189,239);">
+                  <audio id="beep1" src="sounds/work_beep.mp3"></audio>
+         </figcaption>
+         </center>
+        </div>
+      <div class="jar">
+            <div class="container">
+                <div class="pages">
+                  <div class="box">
+                      <div class="page zero">
+                        <img src="documents/screenplays/guest_house/0000.png" alt="divider">
+                        <h1></h1>
+                         <div>
+                        
+                         </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page one">
+                        <img src="documents/screenplays/guest_house/0001.png" alt="divider">
+                        <h1></h1>
+                         <div>
+                        
+                         </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page two">
+                        <img src="documents/screenplays/guest_house/0002.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page three">
+                        <img src="documents/screenplays/guest_house/0003.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page four">
+                        <img src="documents/screenplays/guest_house/0004.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page five">
+                        <img src="documents/screenplays/guest_house/0005.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page six">
+                        <img src="documents/screenplays/guest_house/0006.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page seven">
+                        <img src="documents/screenplays/guest_house/0007.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page eight">
+                        <img src="documents/screenplays/guest_house/0008.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page nine">
+                        <img src="documents/screenplays/guest_house/0009.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page ten">
+                        <img src="documents/screenplays/guest_house/0010.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page eleven">
+                        <img src="documents/screenplays/guest_house/0011.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page twelve">
+                        <img src="documents/screenplays/guest_house/0012.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page thirteen">
+                        <img src="documents/screenplays/guest_house/0013.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page fourteen">
+                        <img src="documents/screenplays/guest_house/0014.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page fifteen">
+                        <img src="documents/screenplays/guest_house/0015.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page sixteen">
+                        <img src="documents/screenplays/guest_house/0016.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page seventeen">
+                        <img src="documents/screenplays/guest_house/0017.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page eightteen">
+                        <img src="documents/screenplays/guest_house/0018.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page nineteen">
+                        <img src="documents/screenplays/guest_house/0019.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twenty">
+                        <img src="documents/screenplays/guest_house/0020.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyone">
+                        <img src="documents/screenplays/guest_house/0021.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentytwo">
+                        <img src="documents/screenplays/guest_house/0022.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentythree">
+                        <img src="documents/screenplays/guest_house/0023.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyfour">
+                        <img src="documents/screenplays/guest_house/0024.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyfive">
+                        <img src="documents/screenplays/guest_house/0025.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentysix">
+                        <img src="documents/screenplays/guest_house/0026.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyseven">
+                        <img src="documents/screenplays/guest_house/0027.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyeight">
+                        <img src="documents/screenplays/guest_house/0028.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentynine">
+                        <img src="documents/screenplays/guest_house/0029.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page thirty">
+                        <img src="documents/screenplays/guest_house/0030.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page thirtyone">
+                        <img src="documents/screenplays/guest_house/0031.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  
+                </div>
+            </div>
+      </div>
+        
+    
+      
+          <script id="rendered-js" >
+                const pages = document.querySelectorAll(".page");
+                const translateAmount = 100;
+                let translate = 100;
+                
+                slide = direction => {
+                
+                  direction === "next" ? translate -= translateAmount : translate += translateAmount;
+                
+                  pages.forEach(
+                  pages => pages.style.transform = `translateX(${translate}%)`);
+                
+                };
+                    //# sourceURL=pen.js
+          </script>
+    
+    </body>
+
+</html>
+ 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+                color: white;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+        </style>
+        <script>
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('federation_classframe.html'); }, 500);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.location.assign('mcquarrie_classframe.html'); }, 500);
+            }
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <div class="lcars_iframe4">
+                            <div class="iframe_body4"><img src="images/flag.png" alt="Fed Banner"><p style="font-size: 65pt; margin-bottom: -20px; margin-top: 15px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; color: rgb(153,168,253); text-align: center;">UNITED FEDERATION OF PLANETS</p></div>
+                        </div>
+                        <br>
+                        <div class="title"><p>FEDERATION TOS ERA: (2265-2269)</p><img src="images/divider.gif" alt="divider"></div>
+                        <p style="margin-top: -15px;">The era of Starfleet legend and hero Captain James Tiberius Kirk. Although these vessels don't look like much, each one is battle hardened and fully equipped for any situation. Either it's a deep space recon mission or a skirmish near the neutral zone, these ships always have a tendency to overcome the odds, no matter how steep. Just don't ask about the Kobiyashi Maru...</p>
+                        <h1>
+                          Ship Types:
+                        </h1>
+                        <div class="list_ul1">
+                            <ul>
+                                <h3>FIGHTERS:</h3>
+
+                                <li>
+                                            <input type="button" class="list_button1" value="LIGHTNING CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>CORVETTES:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="ARCHER CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="DY 750 CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>FRIGATES:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="DESTROYAT CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="SALADIN CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="MCQUARRIE CLASS" onclick="play2();delayNav7()">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="FIRESTORM CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>CAPITAL VESSELS:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="CONSTITUTION CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="FEDERATION CLASS" onclick="play2();delayNav5()">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>UTILITY VESSELS:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="DILITHIUM FREIGHTER" style="width: 190px;" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="DILITHIUM MINER" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>OUTPOST:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="OUTPOST" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="SHIPYARD" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+           </div> 
+        </body>
+</html>
+        

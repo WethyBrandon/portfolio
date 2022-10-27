@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <title>
+    CodePen - JavaScript - Slide from one page to the next ( Left and right)
+  </title>
+   <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="screenplay.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+<style>
+.box {
+  height: 800px;
+  width: 620px;
+}@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button{
+  padding: 8px;
+  width: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: rgb(226, 95, 95);
+}
+.jar {
+  float: left;
+  height: 100%;
+  width: 600px;
+}
+.description {
+  float: left;
+  margin-left: 20px;
+  width: 371px;
+}
+.description p {
+  color: white;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.pages {
+  display: flex;
+	width: 400%;
+	box-sizing: border-box;	
+}
+
+.page {
+  width: 100%;
+  height: 500vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	gap: 10px;
+  transition: all 0.7s;
+  color: white;
+}
+.zero{
+  background-image: url("documents/screenplays/atlas/0000.png");
+  background-color: black;
+  background-size: 100%;
+}
+.one{
+  background-image: url("documents/screenplays/atlas/0001.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.two{
+  background-image: url("documents/screenplays/atlas/0002.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.three{
+  background-image: url("documents/screenplays/atlas/0003.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.four{
+  background-image: url("documents/screenplays/atlas/0004.png");
+  background-color: black;
+  background-size: 100%;
+}
+.five{
+  background-image: url("documents/screenplays/atlas/0005.png");
+  background-color: black;
+  background-size: 100%;
+}
+.six{
+  background-image: url("documents/screenplays/atlas/0006.png");
+  background-color: black;
+  background-size: 100%;
+}
+.seven{
+  background-image: url("documents/screenplays/atlas/0007.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eight{
+  background-image: url("documents/screenplays/atlas/0008.png");
+  background-color: black;
+  background-size: 100%;
+}
+.nine{
+  background-image: url("documents/screenplays/atlas/0009.png");
+  background-color: black;
+  background-size: 100%;
+}
+.ten{
+  background-image: url("documents/screenplays/atlas/0010.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eleven{
+  background-image: url("documents/screenplays/atlas/0011.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twelve{
+  background-image: url("documents/screenplays/atlas/0012.png");
+  background-color: black;
+  background-size: 100%;
+}
+.thirteen{
+  background-image: url("documents/screenplays/atlas/0013.png");
+  background-color: black;
+  background-size: 100%;
+}
+.fourteen{
+  background-image: url("documents/screenplays/atlas/0014.png");
+  background-color: black;
+  background-size: 100%;
+}
+.fifteen{
+  background-image: url("documents/screenplays/atlas/0015.png");
+  background-color: black;
+  background-size: 100%;
+}
+.sixteen{
+  background-image: url("documents/screenplays/atlas/0016.png");
+  background-color: black;
+  background-size: 100%;
+}
+.seventeen{
+  background-image: url("documents/screenplays/atlas/0017.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eightteen{
+  background-image: url("documents/screenplays/atlas/0018.png");
+  background-color: black;
+  background-size: 100%;
+}
+.nineteen{
+  background-image: url("documents/screenplays/atlas/0019.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twenty{
+  background-image: url("documents/screenplays/atlas/0020.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyone{
+  background-image: url("documents/screenplays/atlas/0021.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentytwo{
+  background-image: url("documents/screenplays/atlas/0022.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentythree{
+  background-image: url("documents/screenplays/atlas/0023.png");
+  background-color: black;
+  background-size: 100%;
+}
+</style>
+  <script>
+
+function btnEdit()
+    {
+        document.getElementById("save").style.visibility="visible";
+    }
+    function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+    }
+    function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+    }
+    function delayNav(){
+                setTimeout(function(){ window.location.assign('screenplayframe.html'); }, 800);
+            }
+</script>
+
+
+</head>
+    <body translate="yes" >
+      <div class="description">
+        <div class="title"><p style="color: rgb(255, 144, 0);">ATLAS &#8226; PILOT EPISODE</p><img src="images/divider.gif" alt="divider"></div>
+         <p>
+          <i>Atlas</i> is a pilot episode from one of my earlier times. It features an alien bounty hunter by the name of Marek and his ragtag crew of misfits across the galaxy.
+         </p>
+         <button id="save" style="position: relative; visibility: hidden; background: red; font-size: 25pt; font-family: 'Swiss911', sans-serif; height: 50px; width: 140px; border-radius: 50px; color: black;" onClick="slide('prev');play2();btnSave();">PREVIOUS</button>
+         <audio id="beep2" src="sounds/beep_38.mp3"></audio>
+         <button id="edit" style="margin-top: 50px; margin-left: 80px; background: red; font-size: 25pt; font-family: 'Swiss911', sans-serif; height: 50px; width: 140px; border-radius: 50px; color: black;" onClick="slide('next');play2();btnEdit();">NEXT</button>
+         <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+         <center>
+          <figcaption>
+                  <input type="button" class="list_button" value="RETURN" onclick="play1();delayNav();" style="font-size: 25pt; margin-top: 30px; background-color: rgb(189,189,239);">
+                  <audio id="beep1" src="sounds/work_beep.mp3"></audio>
+         </figcaption>
+         </center>
+        </div>
+      <div class="jar">
+            <div class="container">
+                <div class="pages">
+                  <div class="box">
+                      <div class="page zero">
+                        <img src="documents/screenplays/atlas/0000.png" alt="divider">
+                        <h1></h1>
+                         <div>
+                        
+                         </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page one">
+                        <img src="documents/screenplays/atlas/0001.png" alt="divider">
+                        <h1></h1>
+                         <div>
+                        
+                         </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page two">
+                        <img src="documents/screenplays/atlas/0002.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page three">
+                        <img src="documents/screenplays/atlas/0003.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page four">
+                        <img src="documents/screenplays/atlas/0004.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page five">
+                        <img src="documents/screenplays/atlas/0005.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page six">
+                        <img src="documents/screenplays/atlas/0006.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page seven">
+                        <img src="documents/screenplays/atlas/0007.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page eight">
+                        <img src="documents/screenplays/atlas/0008.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page nine">
+                        <img src="documents/screenplays/atlas/0009.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page ten">
+                        <img src="documents/screenplays/atlas/0010.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page eleven">
+                        <img src="documents/screenplays/atlas/0011.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page twelve">
+                        <img src="documents/screenplays/atlas/0012.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page thirteen">
+                        <img src="documents/screenplays/atlas/0013.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page fourteen">
+                        <img src="documents/screenplays/atlas/0014.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div><div class="box">
+                      <div class="page fifteen">
+                        <img src="documents/screenplays/atlas/0015.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page sixteen">
+                        <img src="documents/screenplays/atlas/0016.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page seventeen">
+                        <img src="documents/screenplays/atlas/0017.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page eightteen">
+                        <img src="documents/screenplays/atlas/0018.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page nineteen">
+                        <img src="documents/screenplays/atlas/0019.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twenty">
+                        <img src="documents/screenplays/atlas/0020.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentyone">
+                        <img src="documents/screenplays/atlas/0021.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentytwo">
+                        <img src="documents/screenplays/atlas/0022.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="page twentythree">
+                        <img src="documents/screenplays/atlas/0023.png" alt="divider">
+                          <h1></h1>
+                            <div>
+                        
+                            </div>
+                      </div>
+                  </div>
+                  
+                        
+                </div>
+                      </div>
+                  </div>
+                  
+                </div>
+            </div>
+      </div>
+        
+    
+      
+          <script id="rendered-js" >
+                const pages = document.querySelectorAll(".page");
+                const translateAmount = 100;
+                let translate = 100;
+                
+                slide = direction => {
+                
+                  direction === "next" ? translate -= translateAmount : translate += translateAmount;
+                
+                  pages.forEach(
+                  pages => pages.style.transform = `translateX(${translate}%)`);
+                
+                };
+                    //# sourceURL=pen.js
+          </script>
+    
+    </body>
+
+</html>
+ 

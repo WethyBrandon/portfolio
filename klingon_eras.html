@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+                color: white;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+            *{margin: 0; padding: 0;}
+            body{background-color: black;}
+            .container
+            {
+            width: 100%;
+            height: 100%;
+    
+            }
+            .trans
+            {
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            }
+            .top
+            {
+            display: flex;
+            width: 80vw;
+            height: 80vh;
+            margin-top: 10vh;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50vh;
+            }
+            .top ul
+            {
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            box-sizing: border-box;
+            }
+            .top ul li
+            {
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 25%;
+            overflow: hidden;
+            }
+            
+            .top ul li::before
+            {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            content: '';
+            color: white;
+            opacity: 0.4;
+            text-align: center;
+            box-sizing: border-box;
+            pointer-events: none;
+            transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            }
+            .top ul li:hover::before
+            {
+            opacity: 0;
+            background-color: rgba(0,0,0,0.90);
+            }
+            .top ul li img
+            {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            }
+            .lightbox
+            {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.75);
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            }
+            .lightbox img
+            {
+            max-width: 90%;
+            max-height: 80%;
+            position: relative;
+            top: -100%;
+            /* Transition */
+            transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            }
+            .lightbox:target
+            {
+            outline: none;
+            top: 0;
+            opacity: 1;
+            pointer-events: auto;
+            transition: all 1.2s ease;
+            -moz-transition: all 1.2s ease;
+            -ms-transition: all 1.2s ease;
+            -o-transition: all 1.2s ease;
+            -webkit-transition: all 1.2s ease;
+            }
+            .lightbox:target img
+            {
+            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function setURL(url) {
+            document.getElementById('iframe').src = url;
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('fed_tosframe.html'); }, 2000);
+            }
+            function delayNav6(){
+                setTimeout(function(){ window.location.assign('fed_ent.html'); }, 2000);
+            }
+            // pics from 
+            // http://www.freepik.com
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <!--<div class="lcars_iframe1">
+                            <div class="iframe_body"><image src="images/concept_banner.jpg"></image></div>
+                        </div>-->
+                        <div class="lcars_iframe4">
+                            <div class="iframe_body4"><p style="font-size: 65pt; margin-bottom: -50px; margin-top: 15px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; color: rgb(153,168,253); text-align: center;">CONCEPT ART</p></div>
+                        </div>
+                        <br>
+                        <div class="title"><img src="images/divider.gif" alt="divider"></div>
+                        <h1 style="margin-top: -25px;">
+                          Various Concepts for Ships Designed for Star Trek: Chronicles:
+                        </h1>
+                        <p style="margin-top: -25px;">Ever since the historic flight of the "Phoenix" in 2063, humanity has taken to the stars. The formation of Starfleet and, ultimately, the Federation has inspired interpid explorers to continue the voyages of those that came before them. Since then, Starfleet has bolstered a rich history of heroic captains and noble fleets all with one creed, "...To boldly go where no one has gone before!". Which era speaks more to you?</p>
+                        <div class="container">
+                        <div class="top">
+                        <ul>
+                                <li><a href="#img_1"><img src="images\concept\concept1.jpg"></a></li>
+                                <li><a href="#img_2"><img src="images\concept\concept2.jpg"></a></li>
+                                <li><a href="#img_3"><img src="images\concept\concept3.jpg"></a></li>
+                                <li><a href="#img_4"><img src="images\concept\concept4.jpg"></a></li>
+                                <li><a href="#img_5"><img src="images\concept\concept5.jpg"></a></li>
+                                <li><a href="#img_6"><img src="images\concept\concept6.jpg"></a></li>
+                                <li><a href="#img_7"><img src="images\concept\concept7.jpg"></a></li>
+                                <li><a href="#img_8"><img src="images\concept\concept8.jpg"></a></li>
+                                <li><a href="#img_9"><img src="images\concept\concept9.jpg"></a></li>
+                                <li><a href="#img_10"><img src="images\concept\concept10.jpg"></a></li>
+                                <li><a href="#img_11"><img src="images\concept\concept11.jpg"></a></li>
+                                <li><a href="#img_12"><img src="images\concept\alien1.jpg"></a></li>
+                                <li><a href="#img_13"><img src="images\concept\alien2.jpg"></a></li>
+                                <li><a href="#img_14"><img src="images\concept\alien3.jpg"></a></li>
+                                <li><a href="#img_15"><img src="images\concept\hitman.jpg"></a></li>
+                                <li><a href="#img_16"><img src="images\concept\hitman2.jpg"></a></li>
+                                <li><a href="#img_17"><img src="images\concept\sketch1.jpg"></a></li>
+                                <li><a href="#img_18"><img src="images\concept\sketch2.jpg"></a></li>
+                                <li><a href="#img_19"><img src="images\concept\sketch3.jpg"></a></li>
+                                <li><a href="#img_20"><img src="images\concept\sketch4.jpg"></a></li>
+                                <li><a href="#img_21"><img src="images\concept\sketch5.jpg"></a></li>
+                                <li><a href="#img_22"><img src="images\concept\sketch6.jpg"></a></li>
+                            </ul>
+                            <a href="#_1" class="lightbox trans" id="img_1"><img src="images\concept\concept1.jpg"></a>
+                            <a href="#_2" class="lightbox trans" id="img_2"><img src="images\concept\concept2.jpg"></a>
+                            <a href="#_3" class="lightbox trans" id="img_3"><img src="images\concept\concept3.jpg"></a>
+                            <a href="#_4" class="lightbox trans" id="img_4"><img src="images\concept\concept4.jpg"></a>
+                            <a href="#_5" class="lightbox trans" id="img_5"><img src="images\concept\concept5.jpg"></a>
+                            <a href="#_6" class="lightbox trans" id="img_6"><img src="images\concept\concept6.jpg"></a>
+                            <a href="#_7" class="lightbox trans" id="img_7"><img src="images\concept\concept7.jpg"></a>
+                            <a href="#_8" class="lightbox trans" id="img_8"><img src="images\concept\concept8.jpg"></a>
+                            <a href="#_9" class="lightbox trans" id="img_9"><img src="images\concept\concept9.jpg"></a>
+                            <a href="#_10" class="lightbox trans" id="img_10"><img src="images\concept\concept10.jpg"></a>
+                            <a href="#_11" class="lightbox trans" id="img_11"><img src="images\concept\concept11.jpg"></a>
+                            <a href="#_12" class="lightbox trans" id="img_12"><img src="images\concept\alien1.jpg"></a>
+                            <a href="#_13" class="lightbox trans" id="img_13"><img src="images\concept\alien2.jpg"></a>
+                            <a href="#_14" class="lightbox trans" id="img_14"><img src="images\concept\alien3.jpg"></a>
+                            <a href="#_15" class="lightbox trans" id="img_15"><img src="images\concept\hitman.jpg"></a>
+                            <a href="#_16" class="lightbox trans" id="img_16"><img src="images\concept\hitman2.jpg"></a>
+                            <a href="#_17" class="lightbox trans" id="img_17"><img src="images\concept\sketch1.jpg"></a>
+                            <a href="#_18" class="lightbox trans" id="img_18"><img src="images\concept\sketch2.jpg"></a>
+                            <a href="#_19" class="lightbox trans" id="img_19"><img src="images\concept\sketch3.jpg"></a>
+                            <a href="#_20" class="lightbox trans" id="img_20"><img src="images\concept\sketch4.jpg"></a>
+                            <a href="#_21" class="lightbox trans" id="img_21"><img src="images\concept\sketch5.jpg"></a>
+                            <a href="#_22" class="lightbox trans" id="img_22"><img src="images\concept\sketch6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+           </div>
+        </body>
+</html>
+        

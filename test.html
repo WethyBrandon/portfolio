@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.dropbtn2 {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(211, 156, 211);
+}
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: rgb(211, 156, 211);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  overflow: auto;
+  margin-left: 160px;
+  margin-top: -80px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: rgb(153,153,255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  overflow: auto;
+  margin-left: 160px;
+  margin-top: -80px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  background-color: rgb(153,153,255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+@font-face {
+    font-family: "Nova";
+    src: url("font/nova/Nova Thin.ttf");
+    src: 
+    url("font/nova/Nova Thin.otf") format("opentype"),
+    url("font/nova/Nova Thin.svg") format("svg");
+}
+@font-face {
+    font-family: "Swiss911";
+    src: url("font/swiss911/Swiss911.ttf");
+    src: 
+    url("font/swiss911/Swiss911.otf") format("opentype"),
+    url("font/swiss911/Swiss911.svg") format("svg");
+}
+@font-face {
+    font-family: "Federation Wide";
+    src: url("font/federation_wide/Federation_Wide.ttf");
+    src: 
+    url("font/federation_wide/Federation_Wide.otf") format("opentype"),
+    url("font/federation_wide/Federation_Wide.svg") format("svg");
+}
+@font-face {
+    font-family: "Federation";
+    src: url("font/federation/Federation.ttf");
+    src: 
+    url("font/federation/Federation.otf") format("opentype"),
+    url("font/federation/Federation.svg") format("svg");
+}
+</style>
+</head>
+<body>
+
+<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Ships and Eras</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div><br><br>
+  <div class="dropdown2">
+  <button onclick="myFunction2()" class="dropbtn2">Downloads</button>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a href="#home">Steam</a>
+    <a href="#about">Moddb</a>
+    <a href="#contact">GOG</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

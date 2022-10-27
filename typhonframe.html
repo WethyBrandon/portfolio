@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico">
+
+        <style>
+            .body {
+                color: white;
+            }
+            .slider {
+                position: absolute;
+                top: 550px;
+                left: 23px;
+                height: 135px;
+                width: 850px;
+                border-radius: 30px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+            .slider img {
+                width: 180px;
+                border: 2px solid rgb(153,153,206);
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .imgtable {
+                
+            }
+            #imgdisplay {
+                position: absolute;
+                height: 480px;
+                width: 850px;
+                top: 35px;
+                left: 25px;
+                border: 1px solid rgb(252,206,0);
+                border-radius: 30px;
+                background-size: 850px 480px;
+            }
+            .default {
+                background-image: url(images/large/typhon1.jpg);
+            }                                    
+            .pic01 {                            
+                background-image: url(images/large/typhon1.jpg);
+                border-radius: 30px;              
+            }                                  
+            /*.pic02 {                            
+                background-image: url(images/large/andcruiser2.jpg);
+                border-radius: 30px;            
+            }                                      
+            .pic03 {                               
+                background-image: url(images/large/andcruiser3.jpg);
+                border-radius: 30px;               
+            }                                     
+            .pic04 {                               
+                background-image: url(images/large/andcruiser4.jpg);
+                border-radius: 30px;
+            }
+            .pic05 {                               
+                background-image: url(images/large/andcruiser5.jpg);
+                border-radius: 30px;
+            }
+            .pic06 {                               
+                background-image: url(images/large/andcruiser6.jpg);
+                border-radius: 30px;
+            }*/
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+            .Doomsbutton {
+            text-align: center;
+            display: inline-block;
+            margin-left: 5px;
+            margin-top: -40px;
+            margin-bottom: 20px;
+            background-color: rgb(153,153,206);
+            border-radius: 30px;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            font-family: 'Swiss911', sans-serif;
+            font-size: 25pt;
+            float: right;
+            }
+            .Doomsbutton:hover {
+            background-color: rgb(189, 189, 239);
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){history.back();}, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('fed_tos.html'); }, 2000);
+            }
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <div class="lcars_iframe5">
+                            <div class="iframe_body5">
+                                <div id="imgdisplay" class="default">
+                                   
+                                </div>
+                                <div id="outer">
+                                <div class="slider">
+                                    <table class="imgtable">
+                                   <td>
+                                    <img src="images/small/typhon1.jpg" onclick="imgdisplay.setAttribute('class','pic01');play1();" alt="Typhon Class">
+                                   </td>
+                                   <!--<td>
+                                    <img src="images/small/andcruiser2.jpg" onclick="imgdisplay.setAttribute('class','pic02');play1();" alt="Andorian Cruiser">
+                                   </td>
+                                   <td>
+                                    <img src="images/small/andcruiser3.jpg" onclick="imgdisplay.setAttribute('class','pic03');play1();" alt="Andorian Cruiser">
+                                    </td>
+                                   <td>
+                                   <img src="images/small/andcruiser4.jpg" onclick="imgdisplay.setAttribute('class','pic04');play1();" alt="Andorian Cruiser">
+                                   </td>
+                                   <td>
+                                   <img src="images/small/andcruiser5.jpg" onclick="imgdisplay.setAttribute('class','pic05');play1();" alt="Andorian Cruiser">
+                                   </td>
+                                   <td>
+                                   <img src="images/small/andcruiser6.jpg" onclick="imgdisplay.setAttribute('class','pic06');play1();" alt="Andorian Cruiser">
+                                   </td>-->
+                                   </table>
+                                </div>
+                                </div>
+                        </div>
+                        <br><p></p>
+                        <div class="title1"><p>STAR TREK: INVASION TYPHON CLASS CARRIER BY BRANDON WETHY</p><input type="button" class="Doomsbutton" value="RETURN" onclick="play2();delayNav();">
+                        <audio id="beep2" src="sounds/beep_38.mp3"></audio><img src="images/divider.gif" alt="divider">
+                        
+                        </div>
+                        <h1>
+                          Background Information:
+                        </h1>
+                        <aside>
+                           <table class="fed_table">
+                                <thead>
+                                    <th colspan="3">
+                                        ANDORIAN CRUISER
+                                    </th>
+                                </thead>
+                                <tr rowspan="3">
+                                    <td>
+                                        Owner:
+                                    </td>
+                                    <td>
+                                        Andorians
+                                    </td>
+                                    <td rowspan="4" style="background-color: rgb(102,4,4);">
+                                        <iframe src="https://sketchfab.com/models/1fdd29eb0b404818a7209d3552e85cee/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<figcaption style="font-size: 13px; font-weight: normal; margin: 5px; color: #1CAAD9">Made in Blender 2.8 and inspired by Star Trek: Invasion
+    by <a href="https://sketchfab.com/SirWethington" target="_blank" style="font-weight: bold; color: #1CAAD9;">SirWethington</a>
+    on <a href="https://sketchfab.com/feed" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab&#8482;</a>
+</figcaption>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Operator:
+                                    </td>
+                                    <td>
+                                        United Federation of Planets
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Type:
+                                    </td>
+                                    <td>
+                                        Carrier
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Active:
+                                    </td>
+                                    <td>
+                                        24th Century
+                                    </td>
+                                </tr>
+                            </table>
+                        </aside>
+                        <p><i>The USS Typhon (NX-85808) was a Federation starship, a Typhon-class mobile carrier fortress in Starfleet service, introduced just after the Dominion War. It was designed to carry 26 fighter class craft, initially Valkyrie-class Federation attack ships. Although it was equipped with full scientific and medical equipment, it was heavily armed with multiple turrets armed with twin mounted quantum torpedo launchers and dual Type-X phasers.</i></p>
+                        <p>
+                            This model was constructed from a piece of concept art. For the texture, I used cuts from the concept art. The ship was designed into seperate pieces and then placed together into one solid mesh. This was the first ship model I ever made in Blender 2.8. It's one of my favorites I have ever created.
+                        </p>
+                        <br><br><br>
+  
+                    </div>
+                </main>
+            </div>
+           </div> 
+        </body>
+</html>
+        

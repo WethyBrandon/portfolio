@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .form {
+                margin-top: 450px;
+                margin-left: 180px;
+                width: 620px;
+            }            
+            table {
+                text-align: left;
+                width: 600px;
+                margin: auto;
+                margin-top: -400px;
+            }
+            
+            tr:nth-child(2n-1) {
+                background-color: rgb(175, 54, 54);
+            }
+            td:first-child {
+                text-align: right;
+                vertical-align: top;
+            }
+            
+            input[type=submit] {
+                height: 50px;
+                width: 200px;
+                text-align: center;
+                background-color: rgb(153,153,206);
+                outline: none;
+                border: none;
+                border-radius: 30px;
+                font-family: 'Nova', sans-serif;
+                font-size: 30pt;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(175, 175, 211);
+            }
+            
+            input, select {
+                font-family: 'Federation', sans-serif;
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.open('https://steamcommunity.com/sharedfiles/filedetails/?id=759628723','_blank'); }, 1200);
+            }
+            function delayNav6(){
+                setTimeout(function(){ window.open('https://www.moddb.com/mods/star-trek-continuum/downloads/star-trek-continuum-release-gamma','_blank'); }, 1200);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.open('https://www.moddb.com/mods/star-trek-continuum-remastered/downloads/stcr-installer','blank'); }, 1200);
+            }
+        </script>
+    </head>
+        <body>
+           <div id="master">
+            <div id="wrapper">
+                <header>
+                    <div class="lcars_head"></div>
+                    <div class="lcars_title"><a href="main.html" style="text-decoration: none; color: rgb(255,144,0);">ST: CONTINUUM &#8226; MAIN</a></div>
+                    <div class="square1"></div>
+                </header>
+                <nav>
+                    <ul id="menu-box">
+                        <li>
+                            <input type="button" class="about" value="ABOUT US" onclick="play1();delayNav();">
+                            <audio id="beep1" src="sounds/beep4.mp3"></audio>
+                            
+                        </li>
+                        <li>
+                            <input type="button" class="ships" value="SHIPS AND ERAS" onclick="play3();delayNav2()">
+                            <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="downloads" value="DOWNLOADS" onclick="play5();delayNav4()">
+                            <audio id="beep5" src="sounds/processing3.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="gallery" value="GALLERY/TRAILERS" onclick="play6();">
+                            <audio id="beep6" src="sounds/alert20.mp3"></audio>
+                        </li>
+                        <li>
+                           <input type="button" class="hail" value="CONTACT US" onclick="play4();delayNav3()">
+                            <audio id="beep4" src="sounds/hail.mp3"></audio>
+                        </li>
+                        <li><img src="images/data1.gif" alt="arbitrary flashing buttons"></li>
+                        <li><img src="images/data.gif" alt="scrolling data"></li>
+                    </ul>
+                </nav>
+                <main>
+                    <div class="lcars_body">
+                        <div class="title"><p>STAR TREK: CONTINUUM &#8226; CONTACT US</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                           Please complete our form!
+                        </h1>
+                        <p>
+                            We will be more than happy to contact you for any concerns or ideas that you may have. Please fill out our form to better contact you in the future for whatever your needs may be!
+                        </p>
+                            <form action="http://lujweb.com/thisone.php" method="POST">
+                                <input type="hidden" name="recipient" value="bwethy@japan.lakeland.edu">
+                                <input type="hidden" name="subject" value="Results of My Form">
+                                <input type="hidden" name="redirect" value="http://lujweb.com/thanks/">
+                                <div class="form">
+                                    <table class="fed_table">
+                                        <th colspan="2" style="text-align: center;">CONTACT US</th>
+                                        <tr>
+                                            <td>Full name:</td>
+                                            <td> <input type="text" name="fullname" id="fullname"> </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Email Address:</td>
+                                            <td> <input type="email" name="email" id="email"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comments:</td>
+                                            <td>
+                                                <textarea name="comments" id="comments" rows="6" cols="30" placeholder="Please leave your comments here..."></textarea>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <input type="submit" value="SUBMIT">
+                                            </td>
+                                            
+                                        </tr>
+                                        
+                                        
+                                        
+                                        
+                                    </table>
+                                </div>
+                            </form>
+                            
+                        <br>
+                                        
+                    </div>
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>
+                </footer>
+            </div>
+           </div> 
+        </body>
+</html>
+        

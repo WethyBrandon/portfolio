@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+        
+
+        <style>
+            .body {
+                color: white;
+            }
+            .form {
+                margin-top: 450px;
+                margin-left: 180px;
+                width: 620px;
+            }            
+            table {
+                text-align: left;
+                width: 600px;
+                margin: auto;
+                margin-top: -400px;
+            }
+            
+            tr:nth-child(2n-1) {
+                background-color: rgb(175, 54, 54);
+            }
+            td:first-child {
+                text-align: right;
+                vertical-align: top;
+            }
+            
+            input[type=submit] {
+                height: 50px;
+                width: 200px;
+                text-align: center;
+                background-color: rgb(153,153,206);
+                outline: none;
+                border: none;
+                border-radius: 30px;
+                font-family: 'Nova', sans-serif;
+                font-size: 30pt;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(175, 175, 211);
+            }
+            
+            input, select {
+                font-family: 'Federation', sans-serif;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+            .lcars_resume {
+               height: 320px;
+               width: 850px;
+               background-color: rgb(255, 208, 0);
+               border-radius: 0px 0px 0px 30px;
+               margin-left: 270px;
+            }
+            .lcars_resumea {
+               height: 400px;
+               width: 750px;
+               background-color: rgb(0, 0, 0);
+               border-radius: 0px 0px 0px 30px;
+               margin-left: 360px;
+               margin-top: -420px;
+            }
+            .iframe_body1a {
+            height: 350px;
+            width: 200px;
+            display: inline-block;
+            background-color: #000000;
+            }
+            .iframe_body1a img {
+            margin-top: 23px;
+            margin-left: -6px;
+            height: 283px;
+            width: 212px;
+            }
+            .lcars_iframe3a {
+            position: relative;
+            margin-top: -300px;
+            margin-left: 0px;
+            width: 250px;
+            height: 330px;
+            text-align: center;
+            background-color: rgb(153,153,206);
+            border-radius: 30px;
+            }
+            .lcars_iframe4a img {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 80px;
+            width: 100px;
+            height: 400px;
+            text-align: center;
+            }
+            .iframe_body4a img {
+            margin-top: 0px;
+            margin-left: 310px;
+            height: auto;
+            width: auto;
+            clear: both;
+            padding-top: 30px;
+            }
+            .resume_iframe {
+            position: relative;
+            margin-top: 100px;
+            margin-left: 0px;
+            width: 980px;
+            height: 1000px;
+            text-align: center;
+            background-color: rgb(225, 117, 239);
+            border-radius: 30px 0px 0px 30px;
+            }
+            .lcars_resumeb {
+               height: 960px;
+               width: 960px;
+               background-color: black;
+               display: inline-block;
+               border-radius: 30px 0px 0px 30px;
+               margin-top: 20px;
+               margin-left: 20px;
+            }
+            .title1a {
+            position: fixed;
+            margin-top: 0px;
+            }
+            .title1a p {
+            position: fixed;
+            margin-top: -10px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            font-family: 'Nova', sans-serif;
+            font-size: 30pt;
+            font-weight: bold;
+            letter-spacing: 2px;
+            z-index: 1;
+            background: rgb(153, 153, 255);
+            border-radius: 20px;
+            }
+            .title1a img {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            background: black;
+            z-index: 2;
+            }
+        </style>
+        <script type="text/javascript">
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+        </script>
+        <script src="form.js"></script>
+    </head>
+        <body>
+                <main>
+                    <div style="background: #000000; position: fixed; width: 100%; height: 150px; margin-top: -80px;"></div>
+                    <div class="title1a"><p style="text-align: center;"><input type="button" class="list_button1" onclick="play1();" style="visibility: hidden;"><a href="#work" class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play1();">EXPERIENCE</a><audio id="beep1" src="sounds/main_beep.mp3"></audio></p>
+                    
+                        <p style="display: block; margin-left: 150px;"><input type="button" class="list_button1" onclick="play2();" style="visibility: hidden;"><a href="#education" class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play2();">EDUCATION</a><audio id="beep2" src="sounds/beep4.mp3"></audio></p>
+                        
+                        <p style="display: block; margin-left: 295px;"><input type="button" class="list_button1" onclick="play3();" style="visibility: hidden;"><a href="#achievments" class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play3();">ACHIEVEMENTS</a><audio id="beep3" src="sounds/work_beep5.mp3"></audio></p>
+                        <p style="display: block; margin-left: 470px;"><input type="button" class="list_button1" onclick="play4();" style="visibility: hidden;"><a href="#certifications" class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play4();">CERTIFICATIONS</a><audio id="beep4" src="sounds/work_beep.mp3"></audio></p>
+                        <p style="display: block; margin-left: 655px;"><input type="button" class="list_button1" onclick="play5();" style="visibility: hidden;"><a href="#awards" class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play5();">AWARDS</a><audio id="beep5" src="sounds/voy_hail.mp3"></audio></p>
+                        
+                        <p style="display: block; margin-left: 780px;"><input type="button" class="list_button1" onclick="play6();" style="visibility: hidden;"><a href="documents\wethybrandon_cv.docx" download="wethybrandon_cv.docx"class="list_button1" style="text-decoration: none; text-align: center; color: rgb(0, 0, 0); margin-left: -8px;" onclick="play6();">DOWNNLOAD</a><audio id="beep6" src="sounds/incoming_hail3.mp3"></audio></p>
+                        
+                        <img src="images/divider.gif" style="position: fixed;" alt="divider"></div>
+                    
+                            
+                    
+                         <br> 
+                         <br> 
+                         <br>
+                         
+                         <p id="work" style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 97%; font-weight: bold;">WORK EXPERIENCE</p>
+                         
+                         <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>PEPPY KIDS CLUB &#8226; NATIVE TEACHER</u><br>
+                         </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">KAGOSHIMA CITY, JAPAN &#8226; AUGUST 2021 –<i> PRESENT</i></p>
+                          
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Teaching English as a second language to children from K-12.</li>
+                                    <li>Managed classrooms independently and with other Native and Japanese teachers.</li>
+                                </ul>
+                            </p>
+                            <p style="text-align: center; margin-top: 0px; font-size: 45pt; color: rgb(153, 168, 253);">
+                                &#8226;&#8226;&#8226;
+                            </p>
+                            <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>CONTINUUM CORP. (MOD GROUP) &#8226; 3D ARTIST/ASSET MANAGEMENT</u><br>
+                            </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">QUEENSLAND, AUSTRALIA &#8226; FEBRUARY 2012 –<i> PRESENT</i></p>
+                          
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Pitched ideas on how to improve performance and efficiency.</li>
+                                    <li>Helped project director to identify glitches and find effective solutions.</li>
+                                    <li>Created and Managed assets for in-game use.</li>
+                                </ul>
+                            </p>
+                            <p style="text-align: center; margin-top: 0px; font-size: 45pt; color: rgb(153, 168, 253);">
+                                &#8226;&#8226;&#8226;
+                            </p>
+                          <p style="z-index: 4; font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>SAM'S CLUB &#8226; TEAM LEAD</u><br>
+                          </p>
+                          <p style="z-index: 4; font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">GRAND RAPIDS, MICHIGAN &#8226; SEPTEMBER 2007 – JUNE 2018</p>
+                          
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Handled customer complaints with empathy and composure.</li>
+                                    <li>Proactively participated in meetings and helped create new work practices and workflows.</li>
+                                    <li>Trained, coached, and supervised new staff members.</li>
+                                    <li>Pitched ideas on how to improve performance, efficiency, and customer satisfaction.</li>
+                                    <li>Helped management to identify workflow issues and find active solutions.</li>
+                                    <li>Supervised and delegated tasks to a team of [8] people</li>
+                                </ul>
+                            </p>
+                            <p style="text-align: center; margin-top: 0px; font-size: 45pt; color: rgb(153, 168, 253);">
+                                &#8226;&#8226;&#8226;
+                            </p>
+                            
+                            <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>MONTCALM COMMUNITY COLLEGE &#8226; DAY CAMP TEACHER/COUNSELLOR</u><br>
+                            </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">GREENVILLE, MICHIGAN &#8226; JULY2015 – JULY 2018</p></div>
+                          
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Taught film acting and production to students (age 7 - 13)</li>
+                                    <li>Responsible for editing and special effects</li>
+                                    <li>Stand in for stunt work and background acting</li>
+                                </ul>
+                                <div id="education">
+                            
+                            <p style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 97%; font-weight: bold;">EDUCATION</p>
+        
+                            <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>BACHELOR'S OF ARTS &#8226; COMMUNICATIONS</u><br>
+                            </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">TEMPLE UNIVERSITY &#8226; GRADUATED – AUGUST 2021</p>                  
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Majored in Film & Media Production</li>
+                                    <li>[Knowledgable in many forms of media production; screenwriting, editing, camera work, etc.]</li>
+                                </ul>
+                                <p style="text-align: center; margin-top: 0px; font-size: 45pt; color: rgb(153, 168, 253);">
+                                &#8226;&#8226;&#8226;
+                            </p>
+                    
+                                <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>LIBERAL ARTS</u><br>
+                            </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">LAKELAND UNIVERSITY JAPAN &#8226; AUGUST 2018 – JULY 2019</p>                  
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Majored in General Courses</li>
+                                    <li>[Most pre-requisite classes were finished here]</li>
+                                </ul>
+                                <p style="text-align: center; margin-top: 0px; font-size: 45pt; color: rgb(153, 168, 253);">
+                                &#8226;&#8226;&#8226;
+                            </p>
+                                <p style="font-size: 35pt; margin-bottom: 0px; margin-left: 20px; margin-top: 20px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; letter-spacing: .09em; text-align: left; color: rgb(255, 144, 0);"><u>MEDIA AND ARTS</u><br>
+                            </p>
+                            <p style="font-size: 25pt; margin-left: 20px; font-family: 'Nova'; font-weight: bold; color: white;">MONTCALM COMMUNITY COLLEGE &#8226; JANUARY 2014</p>
+                                            
+                                <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white;">
+                                    <li>Majored in General Courses</li>
+                                    <li>[Some pre-requisite classes were finished here]</li>
+                                </ul>
+                                
+                            <p id="achievments" style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 97%; font-weight: bold;">ACHIEVMENTS</p>
+                            <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white; margin-bottom: 50px;">
+                                    <li>Sam's Club "Employee of the Month" – February 2014</li>
+                                    <li>Lakeland University Japan – Student Government President 2019</li>
+                                </ul>
+                            <p id="certifications" style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 97%; font-weight: bold;">CERTIFICATIONS</p>
+                            <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white; margin-bottom: 50px;">
+                                    <li>Olympic Broadcast Training Program – October 2020</li>
+                                </ul>
+                            <p id="awards" style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 97%; font-weight: bold;">HONORS &#8226; AWARDS</p>
+                            <ul style="text-align: left; font-family: 'Nova'; list-style: none; font-size: 25pt; letter-spacing: 4px; font-weight: bold; color: white; margin-bottom: 50px;">
+                                    <li>Star Trek: Continuum: MODDB Editor’s Choice "Mod of the Year" Award: 2015</li>
+                                    <li>Star Trek Continuum: MODDB "Best Overhaul Mod of the Year": 2015</li>
+                                    <li>Lakeland University: Two-time Dean's List Award January+ June 2019</li>
+                                    <center>
+                                        <img style="float: center; height: 256px; width: 256px; padding-top: 20px;"src="images/omod2015.png">
+                                        <img style="float: center; height: 256px; width: 256px; padding-top: 20px;" src="images/mod2015.png">
+                                    </center>
+                                </ul>
+                        <br>
+                        <br>
+                </main>
+            </div>
+           </div> 
+        </body>
+</html>
+        

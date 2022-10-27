@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        Brandon Wethy - Portfolio
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            body {
+                background-color: black;
+            }
+            #access_wrapper {
+                margin: auto;
+                width: 1002px;
+                height: 718px;
+                background-color: black;
+            }
+            #wrapper {
+                width: 1000px;
+                height: 718px;
+                text-align: center;
+            }
+            @font-face {
+                font-family: "Nova";
+                src: url("font/nova/Nova Thin.ttf");
+                src: 
+                url("font/nova/Nova Thin.otf") format("opentype"),
+                url("font/nova/Nova Thin.svg") format("svg");
+
+            }
+            @font-face {
+                font-family: "Swiss911";
+                src: url("font/swiss911/Swiss911.ttf");
+                src: 
+                url("font/swiss911/Swiss911.otf") format("opentype"),
+                url("font/swiss911/Swiss911.svg") format("svg");
+                }
+            .access_bar {
+                position: relative;
+                margin-top: 10px;
+                margin-left: 200px;
+                height: 33px;
+                width: 700px;
+                background-color: rgb(165,154,264);
+            }
+            .lcars {
+                font-size: 30pt;
+                font-weight: bold;
+                font-family: 'Nova', sans-serif;
+                position: relative;
+                margin-top: -38px;
+                margin-right: 710px;
+                color: rgb(252, 206, 0)
+            }
+            .square1 {
+                position: relative;
+                margin-top: -38px;
+                margin-left: 70px;
+                height: 33px;
+                width: 20px;
+                background-color: rgb(165,154,264);
+                border-radius: 10px 0px 0px 10px;
+            }
+            .square2 {
+                position: relative;
+                margin-top: -32px;
+                margin-left: 910px;
+                height: 33px;
+                width: 20px;
+                background-color: rgb(252,206,0);
+                border-radius: 0px 10px 10px 0px;
+            }
+            .flag {
+                position: relative;
+                top: 10px;
+            }
+            .flash {
+                position: relative;
+                margin-top: 40px;
+            }
+            h1 {
+                font-family: 'Nova', sans-serif;
+                font-size: 40pt;
+                color: rgb(161, 154, 234);
+                letter-spacing: 2.5px;
+            }
+            h2 {
+                position: relative;
+                font-family: 'Swiss911', sans-serif;
+                font-size: 30pt;
+                letter-spacing: 3px;
+                color:red;
+                -webkit-animation: flash linear 1.5s infinite;
+                animation: flash linear 1.5s infinite;
+            }
+            @-webkit-keyframes flash {
+                0% { opacity: 1; } 
+                30% { opacity: 0; } 
+                100% { opacity: 1; }
+            }
+            @keyframes flash {
+                0% { opacity: 1; } 
+                30% { opacity: 0; } 
+                100% { opacity: 1; }
+            }
+            .login {
+                position: relative;
+                height: 50px;
+                width: 150px;
+                background: red;
+                border: none;
+                border-radius: 50px;
+                display: inline-block;
+                font-family: 'Swiss911', sans-serif;
+                font-size: 15pt;
+                letter-spacing: 2px;
+                text-decoration: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .login:hover {
+                background-color: rgb(229, 105, 105);
+            }
+            .access_square1 {
+                position: relative;
+                margin-top: -120px;
+                margin-left: 303px;
+                height: 30px;
+                width: 35px;
+                background-color: red;
+                border-radius: 10px 0px 0px 10px;
+                -webkit-animation: flash linear 1.5s infinite;
+                animation: flash linear 1.5s infinite;
+            }
+            .access_square2 {
+                margin-left: 356px;
+                height: 30px;
+                width: 35px;
+                background-color: red;
+                border-radius: 0px 10px 10px 0px;
+            }
+            .command {
+                position: relative;
+                margin-top: 100px;
+                font-size: 40pt;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                font-family: 'Nova', sans-serif;
+                color: rgb(164,154,264);
+            }
+            .square3 {
+                position: relative;
+                margin-top: 10px;
+                margin-left: 910px;
+                height: 30px;
+                width: 20px;
+                background-color: rgb(252,206,0);
+                border-radius: 0px 10px 10px 0px;
+            }
+            .square4 {
+                position: relative;
+                margin-top: -30px;
+                margin-left: 70px;
+                height: 30px;
+                width: 20px;
+                background-color: rgb(252,206,0);
+                border-radius: 10px 0px 0px 10px;
+            }
+            .access_bar2 {
+                position: relative;
+                margin-top: -30px;
+                margin-left: 100px;
+                height: 30px;
+                width: 800px;
+                background-color: rgb(165,154,264);
+            }
+            footer {
+                text-align: center;
+                position: relative;
+                color: rgb(100,100,100);
+                font-family: 'Swiss911', sans-serif;
+            }
+            @media screen and (max-width:1000px) {
+                
+            }
+        </style>
+        <script>
+            function play() {
+                var audio = document.getElementById("login");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.replace('mainframe.html'); }, 2500);
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div id="access_wrapper">
+            
+            <div id="wrapper">
+                <div class="access_bar"></div>
+                <div class="lcars">LCARS ONLINE</div>
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <img class="flag" src="images/flag.png" alt="Federation Flag">
+                
+                 <div class="flash">
+                    <h1>
+                        STARFLEET COMMAND LIBRARY DATABASE
+                    </h1>
+                    
+                    <h2>
+                    
+                        II ACCESS RESTRICTED II
+                    </h2>
+                        <input type="button" class="login" value="REQUEST ACCESS" onclick="play();delayNav()">
+                        <audio id="login" src="sounds/login_beep.wav"></audio>
+                </div>
+                    <div class="access_square1"><div class="access_square2"></div></div>
+                    <div class="command">COMMAND AUTHORIZATION REQUIRED</div>
+                <div class="square3"></div>
+                <div class="square4"></div>
+                <div class="access_bar2"></div>
+                
+                <footer>
+                    *All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;
+                </footer>
+
+            </div>
+            
+        </div>
+        
+    </body>
+        
+</html>
+        

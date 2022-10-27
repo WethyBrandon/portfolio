@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+             
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+        </script>
+ </head>
+ <body>
+<div class="body">
+                        <div class="lcars_iframe">
+                            <div class="iframe_body"><p>STAR TREK:CONTINUUM &#8226; GORN RELEASE TRAILER</p></div>
+                        <iframe width="750" height="350" src="https://www.youtube.com/embed/GAzcTO0LRCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="title"><p>HIGHLIGHTS</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                           G'day everyone!
+                        </h1>
+                        <p>
+                            We've had to politely tell people for a couple of years now that we would be doing a non-Steam old-worldy installer version of Star Trek: Continuum Remastered "later" so many times that I'm sure all you that have down voted us for it have long forgotten about our little hobby.
+                            Well now is the time to get your hands on what is currently the latest version of the mod, fresh out of my Steam downloads folder and wrapped up in a nice installer and launcher especially for you!
+                        </p>
+                        <p>
+                            Since moving to the remastered engine the mod is much more visually appealing and some of the restrictions that were around additional races and the likes are just not a thing anymore. We've already added three extra fully playable races to the game:
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/gorn_main.jpg" alt="Gorn" style="border: 2px solid orange;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="GORN HEGEMONY" onclick="play2();" style="background-color: teal;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/borg_icon.jpg" alt="Borg" style="border: 2px solid rgb(0, 255, 38);">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="BORG" onclick="play2();" style="background-color: red;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/dominion.jpg" alt="Dominion" style="border: 2px solid violet;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="DOMINION" onclick="play2();" style="background-color: purple;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <div class="title"><p>CONSIDERATION</p><img src="images/divider.gif" alt="divider"></div>
+                        <p>
+                            As always, we recommend subscribing to our mod on the Steam Workshop page first and foremost. This allows immediate access to updates and makes it easier on us devs to get hot fixes out to you in a timely fashion.
+                            <div class="stc_logo">
+                            <a href="downloads.html"><img src="images/logo.jpg" alt="ST:Continuum Banner"></a>
+                            <!-- Image was made by the team at Continuum Corp Mod Group. Steam Logo belongs to Valve -->
+                            </div>
+                        </p>
+                    </div>
+                </main>
+            </div>
+           </div>
+ </body>
+</html>

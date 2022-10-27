@@ -1,0 +1,593 @@
+body {
+    background-color: black;
+}
+#master {
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+#wrapper {
+    width: 1180px;
+    height: 800px;
+    display: inline-block;
+}
+nav ul {
+    position: relative;
+    margin-top: 124px;
+    margin-left: -40px;
+    height: 80px;
+    width: 160px;
+    color: white;
+}
+nav ul li {
+    list-style-type: none;
+    height: 80px;
+    width: 164px;
+    display: inline-block;
+    background-color: rgb(153,153,255);
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3px;
+    position: relative;
+    margin-bottom: 5px;
+}
+nav ul li:hover {
+    background-color: rgb(206, 201, 255); 
+}
+nav ul li:nth-of-type(2n) {
+    background-color: rgb(204,104,204);
+}
+nav ul li:nth-of-type(2n):hover {
+    background-color: rgb(211, 156, 211);
+}
+nav ul li:nth-of-type(5) {
+    background-color: rgb(204,102,102);
+}
+nav ul li:nth-of-type(5):hover {
+    background-color: rgb(221, 137, 137);
+}
+nav ul li a {
+    vertical-align: -35px;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.about {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.about:hover {
+    background-color: rgb(206, 201, 255);
+}
+.ships {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.ships:hover {
+    background-color: rgb(211, 156, 211);
+}
+.hail {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.hail:hover {
+    background-color: rgb(221, 137, 137);
+}
+.downloads {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.downloads:hover {
+    background-color: rgb(206, 201, 255);
+}
+.gallery {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.gallery:hover {
+    background-color: rgb(211, 156, 211);
+}
+h1 {
+    font-family: 'Federation', sans-serif;
+    padding: 18px;
+}
+li img {
+    position: sticky;
+    margin-top: -5px;
+    margin-left: -5px;
+    height: auto;
+    width: 175px;
+    background-color: transparent;
+}
+h3 {
+    letter-spacing: 2px;
+    font-size: 25pt;
+    font-family: 'Nova', sans-serif;
+}
+p {
+    text-align: left;
+    font-family: 'Federation', sans-serif;
+    font-size: 10pt;
+    padding: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+.italicized {
+    text-align: left;
+    font-family: 'Federation', sans-serif;
+    font-size: 10pt;
+    padding: 18px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.stc_logo img {
+    margin-top: -10px;
+    width: 100%;
+}
+.list_ul {
+    margin-left: 20px;
+    font-size: 25pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Nova', sans-serif;
+}
+.list_ul figure img {
+    margin-top: -30px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.list_ul li {
+    text-align: center;
+    display: inline-block;
+    margin-left: -78px;
+}
+.list_button {
+    position: relative;
+    height: 60px;
+    width: 190px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: 'Swiss911', sans-serif;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.list_ul1 {
+    margin-left: 18px;
+    font-size: 25pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Nova', sans-serif;
+}
+.list_ul1 li {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(153,153,206);
+    border-radius: 30px;
+}
+.list_ul1 li:hover {
+    background-color: rgb(189, 189, 239);
+}
+.list_ul1 li:nth-of-type(2n) {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(255,0,0);
+}
+.list_ul1 li:nth-of-type(3n) {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(204,104,204);
+}
+.list_ul1 li:nth-of-type(4n) {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(252,206,0);
+}
+.list_ul1 input {
+    position: relative;
+    height: 60px;
+    width: 190px;
+    background-color: transparent ;
+    border: none;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: 'Swiss911', sans-serif;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.list_ul1 li:nth-of-type(2n):hover {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(226, 95, 95);
+}
+.list_ul1 li:nth-of-type(3n):hover {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(221, 141, 221);
+}
+.list_ul1 li:nth-of-type(4n):hover {
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: rgb(247, 224, 121);
+}
+.title {
+    position: relative;
+    margin-top: 80px;
+}
+.title p {
+    position: absolute;
+    margin-top: -40px;
+    font-family: 'Nova', sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255,144,0);
+    
+}
+.title img {
+    width: 100%;
+}
+.title1 {
+    position: relative;
+    margin-top: 150px;
+}
+.title1 p {
+    position: absolute;
+    margin-top: -40px;
+    font-family: 'Nova', sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255,144,0);
+    
+}
+.title1 img {
+    width: 100%;
+}
+.lcars_head {
+    height: 150px;
+    width: 920px;
+    background-color: rgb(255,204,153);
+    border-radius: 30px 0px 0px 0px;
+}
+.lcars_title {
+    position: inherit;
+    margin-left: 880px;
+    margin-top: -155px;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Nova', sans-serif;
+    -webkit-animation: flash linear s infinite;
+    animation: flash linear 2s infinite;
+}
+@-webkit-keyframes flash {
+    0% { opacity: 0; } 
+    20% { opacity: 0; } 
+    30% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 0; } 
+    20% { opacity: 0; } 
+    30% { opacity: 1; }
+}
+.square1 {
+    position: relative;
+    margin-top: -38px;
+    margin-left: 1150px;
+    height: 33px;
+    width: 30px;
+    background-color: rgb(255,204,153);
+    border-radius: 0px 10px 10px 0px;
+}
+@font-face {
+    font-family: "Nova";
+    src: url("font/nova/Nova Thin.ttf");
+    src: 
+    url("font/nova/Nova Thin.otf") format("opentype"),
+    url("font/nova/Nova Thin.svg") format("svg");
+}
+@font-face {
+    font-family: "Swiss911";
+    src: url("font/swiss911/Swiss911.ttf");
+    src: 
+    url("font/swiss911/Swiss911.otf") format("opentype"),
+    url("font/swiss911/Swiss911.svg") format("svg");
+}
+@font-face {
+    font-family: "Federation Wide";
+    src: url("font/federation_wide/Federation_Wide.ttf");
+    src: 
+    url("font/federation_wide/Federation_Wide.otf") format("opentype"),
+    url("font/federation_wide/Federation_Wide.svg") format("svg");
+}
+@font-face {
+    font-family: "Federation";
+    src: url("font/federation/Federation.ttf");
+    src: 
+    url("font/federation/Federation.otf") format("opentype"),
+    url("font/federation/Federation.svg") format("svg");
+}
+.lcars_body {
+    position: relative;
+    margin-top: -215px;
+    margin-left: 170px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgb(0, 0, 0);
+    height: 850px;
+    width: 1008px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: left;
+    color: white;
+    z-index: 1;
+    
+}
+.lcars_iframe {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 850px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(252,206,0);
+    border-radius: 30px;
+}
+.lcars_iframe1 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 850px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(204,104,204);
+    border-radius: 30px;
+}
+.lcars_iframe3 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 850px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(153,153,206);
+    border-radius: 30px;
+}
+.lcars_iframe2 img {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    border-radius: 30px;
+}
+.lcars_iframe4 img {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 100px;
+    height: 400px;
+    text-align: center;
+}
+.lcars_iframe5 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 900px;
+    height: 550px;
+    text-align: center;
+    background-color: rgb(252,206,0);
+    border-radius: 30px;
+}
+.lcars_iframe5 iframe {
+    position: relative;
+    margin-top: 40px;
+    margin-left: -50px;
+    text-align: center;
+    background-color: rgb(252,206,0);
+    border-radius: 30px;
+}
+.iframe_body5 {
+    height: 550px;
+    width: 750px;
+    margin-left: 12px;
+    display: inline-block;
+    background-color: black;
+}
+.iframe_body {
+    height: 400px;
+    width: 600px;
+    display: inline-block;
+    background-color: black;
+}
+.iframe_body img {
+    margin-top: 25px;
+    margin-left: -98px;
+    height: 350px;
+    width: 800px;
+}
+.iframe_body2 {
+    height: 400px;
+    width: 600px;
+    display: inline-block;
+    background-color: black;
+}
+.iframe_body2 img {
+    margin-top: 0px;
+    margin-left: -5px;
+    height: 500px;
+    width: 1000px;
+}
+.iframe_body4 img {
+    margin-top: 0px;
+    margin-left: 310px;
+    height: auto;
+    width: auto;
+    clear: both;
+    padding-top: 30px;
+}
+.lcars_iframe iframe {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: -675px;
+    z-index: 1;
+}
+.lcars_iframe p {
+    margin-top: 360px;
+    vertical-align: bottom;
+    font-size: 20pt;
+    font-family: 'Nova', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(153,153,206);
+}
+.lcars_footer {
+    position: static;
+    margin-top: -115px;
+    height: 150px;
+    width: 1130px;
+    background-color: rgb(255,204,153);
+    border-radius: 0px 0px 0px 30px;
+}
+.square2 {
+    position: relative;
+    margin-top: -35px;
+    margin-left: 1150px;
+    height: 35px;
+    width: 30px;
+    background-color: rgb(255,204,153);
+    border-radius: 0px 10px 10px 0px;
+}
+footer {
+    text-align: center;
+    position: static;
+    color: rgb(100,100,100);
+    font-family: 'Swiss911', sans-serif;
+    margin-top: -50px;
+}
+aside {
+    clear: both;
+}
+.fed_table {
+    width: 100%;
+    text-align: left;
+    font-family: 'Federation', sans-serif;
+    background-color: rgb(153, 0, 0);
+    border-radius: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tr, td {
+    border: 1px solid black;
+    width: 80px;
+    padding: 10px 0px 5px 5px;
+}
+td iframe {
+    top: -40px;
+    right: -60px;
+    height: 500px;
+    width: 580px;
+}
+th {
+    background-color: rgb(102, 4, 4);
+    border-radius: 20px 20px 0px 0px;
+}
+.fed_table thead {
+    text-align: center;
+}
+.lcars_iframe6 {
+    position: relative;
+    margin-top: 420px;
+    margin-left: 80px;
+    width: 850px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(252,206,0);
+    border-radius: 30px;
+}
+#iframe {
+    width: 1008px;
+    height: 900px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+}

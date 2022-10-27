@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        Brandon Wethy - Portfolio
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            #toggle {
+                display: none;
+                position: absolute;
+                background-color: yellow;
+                width: 220px;
+                height: 350px;
+                margin-left: 170px;
+                margin-top: -83px;
+                border-radius: 20px;
+                z-index: 10;
+            }
+            #toggle input {
+                height: 60px;
+                width: 180px;
+                border-radius: 30px;
+                font-family: 'Nova', sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                letter-spacing: 2px;
+                outline: none;
+                cursor: pointer;
+                vertical-align: bottom;
+            }
+            .middle {
+                position: absolute;
+                height: 100%;
+                width: 75%;
+                left: 25px;
+                background-color: black;
+            }
+            .bracket {
+                position: absolute;
+                top: 10px;
+                left: 7px;
+                width: 200px;
+                height: 320px;
+                border-radius: 20px;
+                background-color: black;
+            }
+            #toggle1 {
+                display: none;
+                position: absolute;
+                background-color: yellow;
+                width: 220px;
+                height: 300px;
+                margin-left: 170px;
+                margin-top: -83px;
+                border-radius: 20px;
+                z-index: 10;
+            }
+            #toggle1 input {
+                height: 60px;
+                width: 180px;
+                border-radius: 20px;
+                font-family: 'Nova', sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                letter-spacing: 2px;
+                outline: none;
+                cursor: pointer;
+                vertical-align: bottom;
+            }
+            .middle1 {
+                position: absolute;
+                height: 100%;
+                width: 75%;
+                left: 25px;
+                background-color: black;
+            }
+            .bracket1 {
+                position: absolute;
+                top: 10px;
+                left: 7px;
+                width: 200px;
+                height: 260px;
+                border-radius: 20px;
+                background-color: black;
+            }
+            .federation {
+                border: none;
+                margin-top: 10px;
+                background-color: rgb(247, 213, 79);
+            }
+            .federation:hover {
+                background-color: rgb(247, 221, 160);
+            }
+            .klingon {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(204,102,102);
+            }
+            .klingon:hover {
+                background-color: rgb(221,137,137);
+            }
+            .romulan {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(0,160,69);
+            }
+            .romulan:hover {
+                background-color: rgb(78,196,127);
+            }
+            .cardassian {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(219, 150, 32);
+            }
+            .cardassian:hover {
+                background-color: rgb(211, 171, 107);
+            }
+            .borg {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(153,153,255);
+            }
+            .borg:hover {
+                background-color: rgb(206, 201, 255); 
+            }
+            .dominion {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(204,104,204);
+            }
+            .dominion:hover {
+                background-color: rgb(211, 156, 211);
+            }
+            .gorn {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(226, 211, 0);
+            }
+            .gorn:hover {
+                background-color: rgb(247, 239, 148);
+            }
+            .youtube {
+                border: none;
+                margin-top: 3px;
+                background-color: rgb(255, 0, 0);
+            }
+            .youtube:hover {
+                background-color: rgb(244, 146, 146);
+            }
+        </style>
+        <script type="text/javascript">
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            function play7() {
+                var audio = document.getElementById("beep7");
+                audio.play();
+            }
+            function play8() {
+                var audio = document.getElementById("beep8");
+                audio.play();
+            }
+            
+            function setURL(url) {
+            document.getElementById('iframe').src = url;
+            }
+            
+            function showDiv() {
+                var x =
+            document.getElementById('toggle');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                }
+            }
+            function showDiv1() {
+                var x =
+            document.getElementById('toggle1');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                }
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.open('https://www.linkedin.com/in/brandon-wethy-217aa711a','_blank'); }, 1200);
+            }
+            function delayNav6(){
+                setTimeout(function(){ window.open('https://www.facebook.com/brandon.wethy','_blank'); }, 1200);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.open('https://twitter.com/WethyBrandon','blank'); }, 1200);
+            }
+            function delayNav8(){
+                setTimeout(function(){ window.open('https://www.youtube.com/channel/UCx7cFb_0BagkOMzuFmr1DlA','blank'); }, 1200);
+            }
+        </script>
+        
+    </head>
+        <body>
+           <div id="master">
+            <div id="wrapper">
+                <header>
+                    <div class="lcars_head"></div>
+                    <div class="lcars_title"><a href="mainframe.html" style="text-decoration: none; color: rgb(255,144,0);">BTWETHY PORTFOLIO &#8226; MAIN</a></div>
+                    <div class="square1"></div>
+                </header>
+                <nav>
+                    <ul id="menu-box">
+                        <li>
+                            <input type="button" class="about" value="ABOUT ME" onclick="play1();setURL('usframe.html');">
+                            <audio id="beep1" src="sounds/beep4.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="ships" value="MY WORKS" onclick="play3();showDiv()">
+                            <audio id="beep3" src="sounds/work_beep2.mp3"></audio>
+                            <div id="toggle">
+                                <div class="middle"></div>
+                                    <div class="bracket">
+                                        <input type="button" class="borg" value="3D MODELS" onclick="play7();setURL('federation_erasframe.html');showDiv();">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <input type="button" class="dominion" value="CONCEPT ART" onclick="play7();setURL('klingon_eras.html');showDiv();">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <input type="button" class="borg" value="VIDEO EDITING" onclick="play7();setURL('video_editingframe.html');showDiv();">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <input type="button" class="dominion" value="GAME PROJECTS" onclick="play7();setURL('games.html');showDiv();">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <input type="button" class="youtube" value="SCREENPLAYS" onclick="play7();setURL('screenplayframe.html');showDiv();">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <!--<input type="button" class="dominion" value="DOMINION" onclick="play7();setURL('federation_erasframe.html');">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+                                        <input type="button" class="gorn" value="GORN" onclick="play7();setURL('federation_erasframe.html');">
+                                        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>-->
+                                    </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="button" class="downloads" value="RESUME" onclick="play5();setURL('resume.html');">
+                            <audio id="beep5" src="sounds/beep_2.mp3"></audio>
+                            
+                        </li>
+                        <li>
+                            <input type="button" class="gallery" value="SOCIAL MEDIA" onclick="play6();showDiv1();">
+                            <audio id="beep6" src="sounds/beep_2.mp3"></audio>
+                            <div id="toggle1">
+                                <div class="middle1"></div>
+                                    <div class="bracket1">
+                                        <input type="button" class="borg" value="LINKED IN" onclick="play8();delayNav5();showDiv1();">
+                                        <audio id="beep8" src="sounds/helm.wav"></audio>
+                                        <input type="button" class="dominion" value="FACEBOOK" onclick="play8();delayNav6();showDiv1();">
+                                        <audio id="beep8" src="sounds/helm.wav"></audio>
+                                        <input type="button" class="borg" value="TWITTER" onclick="play8();delayNav7();showDiv1();">
+                                        <audio id="beep8" src="sounds/helm.wav"></audio>
+                                        <input type="button" class="youtube" value="YOUTUBE" onclick="play8();delayNav8();showDiv1();">
+                                        <audio id="beep8" src="sounds/helm.wav"></audio>
+                                    </div>
+                            </div>   
+                        </li>
+                        <li>
+                            <input type="button" class="hail" value="CONTACT ME" onclick="play4();setURL('contactframe.html')">
+                            <audio id="beep4" src="sounds/damagealarm.mp3"></audio>
+                        </li>
+                        <!--<li><img src="images/data1.gif" alt="arbitrary flashing buttons"></li>-->
+                        <li><img src="images/data.gif" alt="scrolling data"></li>
+                    </ul>
+                </nav>
+                <main>
+                    <div class="lcars_body">
+                        <iframe id="iframe" src="main.html"></iframe>
+                    </div>
+                        
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <!--<p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>--
+                </footer>
+        </body>
+        <!--<audio loop autoplay>
+            <source src="sounds/voy_bridge.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+      
+</html>
+        

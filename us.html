@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        Brandon Wethy - Portfolio
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+        </script>
+    </head>
+        <body>
+           <div id="master">
+            <div id="wrapper">
+                <header>
+                    <div class="lcars_head"></div>
+                    <div class="lcars_title"><a href="main.html" style="text-decoration: none; color: rgb(255,144,0);">ST: CONTINUUM &#8226; MAIN</a></div>
+                    <div class="square1"></div>
+                </header>
+                <nav>
+                    <ul id="menu-box">
+                        <li>
+                            <input type="button" class="about" value="ABOUT US" onclick="play1();delayNav()">
+                            <audio id="beep1" src="sounds/beep4.mp3"></audio>
+                            
+                        </li>
+                        <li>
+                            <input type="button" class="ships" value="SHIPS AND ERAS" onclick="play3();delayNav2()">
+                            <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="downloads" value="DOWNLOADS" onclick="play5();delayNav4()">
+                            <audio id="beep5" src="sounds/processing3.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="gallery" value="GALLERY/TRAILERS" onclick="play6();">
+                            <audio id="beep6" src="sounds/alert20.mp3"></audio>
+                        </li>
+                        <li>
+                           <input type="button" class="hail" value="CONTACT US" onclick="play4();delayNav3()">
+                            <audio id="beep4" src="sounds/hail.mp3"></audio>
+                        </li>
+                        <li><img src="images/data1.gif" alt="arbitrary flashing buttons"></li>
+                        <li><img src="images/data.gif" alt="scrolling data"></li>
+                    </ul>
+                </nav>
+                <main>
+                    <div class="lcars_body">
+                        <div class="lcars_iframe1">
+                            <div class="iframe_body"><img src="images/cinematic.gif" alt="About Us" style="border-radius: 30px;"></div>
+                        </div>
+                        <br>
+                        <div class="title"><p>STAR TREK: CONTINUUM MOD MISSION STATEMENT:</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                           A statement from the team:
+                        </h1>
+                        <p class="italicized">
+                            "Mods, the final frontier. These are the imaginings of Continuum Corp. Its continuing mission, to explore strange new scripts, to find new models and new customisations. To boldly mod what no mod has modded before!"
+                            <br><br>
+                            -Star Trek: Continuum Crew
+                        </p>
+                        <!-- Divider image from ST:Continuum Moddb -->
+                        <div class="title"><p>ST: CONTINUUM TEAM MEMBERS</p><img src="images/divider.gif" alt="divider"></div>
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/nathanius.jpg" alt="Nathanius" style="border: 2px solid red;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="NATHANIUS" onclick="play2();" style="background-color: rgb(153,153,255)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/tng.png" alt="StarGazer" style="border: 2px solid red;" >
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="STARGAZER" onclick="play2();" style="background-color: rgb(204,104,204)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/herby_guitar.jpg" alt="Herby" style="border: 2px solid red;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="HERBYGUITAR" onclick="play2();" style="background-color: rgb(252,206,0)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/dark_sentinel.jpg" alt="Dark" style="border: 2px solid gold;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="DARK SENTINEL" onclick="play2();" style="background-color: rgb(204,104,204)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/brandonater.jpg" alt="Brandonater" style="border: 2px solid gold;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="BRANDONATER" onclick="play2();" style="background-color: rgb(252,206,0)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/major_stress.jpg" alt="Major Stress" style="border: 2px solid blue;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="MAJOR_STRESS" onclick="play2();" style="background-color: rgb(153,153,255)">
+                                            <audio id="beep2" src="sounds/work_beep4.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>
+                </footer>
+            </div>
+           </div> 
+        </body>
+</html>
+        

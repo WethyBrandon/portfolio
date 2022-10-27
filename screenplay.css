@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button{
+  padding: 8px;
+  width: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: rgb(226, 95, 95);
+}
+.jar {
+  float: left;
+  height: 100%;
+  width: 600px;
+}
+.description {
+  float: left;
+  margin-left: 20px;
+  width: 371px;
+}
+.description p {
+  color: white;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.pages {
+  display: flex;
+	width: 400%;
+	box-sizing: border-box;	
+}
+
+.page {
+  width: 100%;
+  height: 500vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	gap: 10px;
+  transition: all 0.7s;
+  color: white;
+}
+.zero{
+  background-image: url("documents/screenplays/guest_house/0000.png");
+  background-color: black;
+  background-size: 100%;
+}
+.one{
+  background-image: url("documents/screenplays/guest_house/0001.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.two{
+  background-image: url("documents/screenplays/guest_house/0002.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.three{
+  background-image: url("documents/screenplays/guest_house/0003.png");
+  background-color: black;
+  background-size: 100%;
+}
+
+.four{
+  background-image: url("documents/screenplays/guest_house/0004.png");
+  background-color: black;
+  background-size: 100%;
+}
+.five{
+  background-image: url("documents/screenplays/guest_house/0005.png");
+  background-color: black;
+  background-size: 100%;
+}
+.six{
+  background-image: url("documents/screenplays/guest_house/0006.png");
+  background-color: black;
+  background-size: 100%;
+}
+.seven{
+  background-image: url("documents/screenplays/guest_house/0007.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eight{
+  background-image: url("documents/screenplays/guest_house/0008.png");
+  background-color: black;
+  background-size: 100%;
+}
+.nine{
+  background-image: url("documents/screenplays/guest_house/0009.png");
+  background-color: black;
+  background-size: 100%;
+}
+.ten{
+  background-image: url("documents/screenplays/guest_house/0010.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eleven{
+  background-image: url("documents/screenplays/guest_house/0011.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twelve{
+  background-image: url("documents/screenplays/guest_house/0012.png");
+  background-color: black;
+  background-size: 100%;
+}
+.thirteen{
+  background-image: url("documents/screenplays/guest_house/0013.png");
+  background-color: black;
+  background-size: 100%;
+}
+.fourteen{
+  background-image: url("documents/screenplays/guest_house/0014.png");
+  background-color: black;
+  background-size: 100%;
+}
+.fifteen{
+  background-image: url("documents/screenplays/guest_house/0015.png");
+  background-color: black;
+  background-size: 100%;
+}
+.sixteen{
+  background-image: url("documents/screenplays/guest_house/0016.png");
+  background-color: black;
+  background-size: 100%;
+}
+.seventeen{
+  background-image: url("documents/screenplays/guest_house/0017.png");
+  background-color: black;
+  background-size: 100%;
+}
+.eightteen{
+  background-image: url("documents/screenplays/guest_house/0018.png");
+  background-color: black;
+  background-size: 100%;
+}
+.nineteen{
+  background-image: url("documents/screenplays/guest_house/0019.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twenty{
+  background-image: url("documents/screenplays/guest_house/0020.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyone{
+  background-image: url("documents/screenplays/guest_house/0021.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentytwo{
+  background-image: url("documents/screenplays/guest_house/0022.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentythree{
+  background-image: url("documents/screenplays/guest_house/0023.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyfour{
+  background-image: url("documents/screenplays/guest_house/0024.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyfive{
+  background-image: url("documents/screenplays/guest_house/0025.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentysix{
+  background-image: url("documents/screenplays/guest_house/0026.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyseven{
+  background-image: url("documents/screenplays/guest_house/0027.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentyeight{
+  background-image: url("documents/screenplays/guest_house/0028.png");
+  background-color: black;
+  background-size: 100%;
+}
+.twentynine{
+  background-image: url("documents/screenplays/guest_house/0029.png");
+  background-color: black;
+  background-size: 100%;
+}
+.thirty{
+  background-image: url("documents/screenplays/guest_house/0030.png");
+  background-color: black;
+  background-size: 100%;
+}
+.thirtyone{
+  background-image: url("documents/screenplays/guest_house/0031.png");
+  background-color: black;
+  background-size: 100%;
+}

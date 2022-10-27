@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+                color: white
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('fed_tos.html'); }, 2000);
+            }
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <div class="lcars_iframe4">
+                            <div class="iframe_body4"><img src="images/flag.png" alt="Fed Banner"><p style="font-size: 65pt; margin-bottom: -80px; margin-top: -25px; letter-spacing: 2px; font-family: 'Nova', sans-serif; font-weight: bold; color: rgb(153,168,253); text-align: center;">UNITED FEDERATION OF PLANETS</p></div>
+                        </div>
+                        <br>
+                        <div class="title"><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                          Select a Category:
+                        </h1>
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/gorn_main.jpg" alt="Enterprise" style="border: 2px solid silver">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="ENTERPRISE" onclick="play2();" style="background-color: silver">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/tos.png" alt="The Original Series" style="border: 2px solid red">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="THE ORIGINAL SERIES" onclick="play2();delayNav5();" style="background-color: red">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/tmp.png" alt="The Motion Pictures" style="border: 2px solid rgb(42,183,162)">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="THE MOTION PICTURES" onclick="play2();" style="background-color: rgb(42, 183, 162)">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/nathanius.jpg" alt="The Next Generation" style="border: 2px solid rgb(153,168,255)">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="THE NEXT GENERATION" onclick="play2();" style="background-color: rgb(153,168,255)">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>
+                </footer>
+            </div>
+           </div> 
+        </body>
+</html>
+        

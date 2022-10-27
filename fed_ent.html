@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+                color: white;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+            .banner {
+                height: 350px;
+                width: 700px;
+            }
+            .Doomsbutton {
+            text-align: center;
+            display: inline-block;
+            margin-left: 5px;
+            margin-top: -40px;
+            margin-bottom: 20px;
+            background-color: rgb(153,153,206);
+            border-radius: 30px;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            font-family: 'Swiss911', sans-serif;
+            font-size: 25pt;
+            float: right;
+            }
+            .Doomsbutton:hover {
+            background-color: rgb(189, 189, 239);
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('federation_erasframe.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('andorianframe.html'); }, 500);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('preentrom_frigate.html'); }, 500);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('typhonframe.html'); }, 500);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('federation_classframe.html'); }, 500);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.location.assign('mcquarrie_classframe.html'); }, 500);
+            }
+        </script>
+    </head>
+        <body>
+                <main>
+                    <div class="body">
+                        <div class="lcars_iframe4">
+                            
+                        </div>
+                        <br>
+                        <div class="title"><p>Ships and Megaliths</p><input type="button" class="Doomsbutton" value="RETURN" onclick="play1();delayNav()">
+                        <audio id="beep1" src="sounds/beep_38.mp3"></audio><img src="images/divider.gif" alt="divider"></div>
+                        <p style="margin-top: -15px;">These ships and mega structures were made by me. Most of these Ships and structures were made for use in the Star Trek: Chronicles mod for Homeworld: Remastered. The <i>Enterprise</i>-era ships were made exclusively for the Romulans in the mod. Each of these Romulan ships were designed off of a single piece of concept art by <a href="http://4.bp.blogspot.com/-FqMNS-iuP5k/T4HJ0UuUYmI/AAAAAAAAC2Y/3PMwijR4Bw0/s1600/untitled-138.jpg" style="color: #1CAAD9; text-decoration: none; font-weight: bold;">Greg Jein</a>.</p>
+                        
+                        <p id="work" style="text-align: center; color: black; font-family: 'Nova'; font-size: 45pt; background: rgb(221, 141, 221); width: 95%; font-weight: bold;">SHIPS & MEGALITHS</p>
+                        <div class="list_ul1">
+                            <ul>
+                                <li>
+                                            <input type="button" class="list_button1" value="DOOMSDAY MACHINE" onclick="play2();delayNav5();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="TYPHON CLASS" onclick="play2(); delayNav4();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="PRE-ENT FRIGATE" onclick="play2();delayNav3()">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="ANDORIAN CRUISER" onclick="play2();delayNav2()">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <!--<h3>FRIGATES:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="INTREPID CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="SARAJEVO CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="DAEDALUS CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="SURAK CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="LAIBOK CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="MIKLON CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>CAPITAL VESSELS:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="NX CLASS" onclick="play2();delayNav5();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="NX-(REFIT) CLASS" onclick="play2();delayNav5();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="BONAVENTURE CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="SH'RAN CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="KUMARI CLASS" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <li>
+                                            <input type="button" class="list_button1" value="T'GARIM CLASS" onclick="play2();delayNav7();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>UTILITY VESSELS:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="DILITHIUM FREIGHTER" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>
+                                <h3>OUTPOST:</h3>
+                                <li>
+                                            <input type="button" class="list_button1" value="OUTPOST" onclick="play2();">
+                                            <audio id="beep2" src="sounds/main_beep.mp3"></audio>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+           </div> 
+        </body>
+</html>
+        

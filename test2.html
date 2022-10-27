@@ -1,0 +1,88 @@
+<html>
+<style>
+#toggle {
+position: absolute;
+background-color: gold;
+width: 200px;
+height: 400px;
+/*margin-left: 170px;
+margin-top: -83px;*/
+text-align: center;
+z-index: 10;
+border-radius: 20px;
+}
+#toggle input {
+    height: 85px;
+}
+.middle {
+    position: absolute;
+    left: 25px;
+    width: 75%;
+    height: 400px;
+    background-color: black;
+    clear: both;
+}
+.bracket {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 180px;
+    height: 380px;
+    background-color: black;
+    border-radius: 20px;
+}
+.federation {
+    border: none;
+    height: 80px;
+    width: 160px;
+    text-align: left;
+    background-color: rgb(153,153,255);
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    vertical-align: bottom;
+}
+.federation:hover {
+    background-color: rgb(206, 201, 255);
+}
+.klingon {
+    border: none;
+    height: 80px;
+    width: 160px;
+    margin-top: 3px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: rgb(204,102,102);
+    font-family: 'Nova', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.klingon:hover {
+    background-color: rgb(221,137,137);
+}
+</style>
+<script>
+    
+</script>
+
+<body>
+    <div id="toggle">
+        <div class="middle"></div>
+            <div class="bracket">
+                <input type="button" class="federation" value="FEDERATION" onclick="play3();setURL('federation_erasframe.html');">
+                <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+                <input type="button" class="klingon" value="KLINGON" onclick="play3();setURL('federation_erasframe.html');">
+                <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

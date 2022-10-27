@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('federation_eras.html'); }, 2000);
+            }
+        </script>
+    </head>
+        <body>
+           <div id="master">
+            <div id="wrapper">
+                <header>
+                    <div class="lcars_head"></div>
+                    <div class="lcars_title"><a href="main.html" style="text-decoration: none; color: rgb(255,144,0);">ST: CONTINUUM &#8226; MAIN</a></div>
+                    <div class="square1"></div>
+                </header>
+                <nav>
+                    <ul id="menu-box">
+                        <li>
+                            <input type="button" class="about" value="ABOUT US" onclick="play1();delayNav()">
+                            <audio id="beep1" src="sounds/beep4.mp3"></audio>
+                            
+                        </li>
+                        <li>
+                            <input type="button" class="ships" value="SHIPS AND ERAS" onclick="play3();delayNav2()">
+                            <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="downloads" value="DOWNLOADS" onclick="play5();delayNav4()">
+                            <audio id="beep5" src="sounds/processing3.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="gallery" value="GALLERY/TRAILERS" onclick="play6();">
+                            <audio id="beep6" src="sounds/alert20.mp3"></audio>
+                        </li>
+                        <li>
+                           <input type="button" class="hail" value="CONTACT US" onclick="play4();delayNav3()">
+                            <audio id="beep4" src="sounds/hail.mp3"></audio>
+                        </li>
+                        <li><img src="images/data1.gif" alt="arbitrary flashing buttons"></li>
+                        <li><img src="images/data.gif" alt="scrolling data"></li>
+                    </ul>
+                </nav>
+                <main>
+                    <div class="lcars_body">
+                        
+                        <br>
+                        <div class="title"><p>SELECTABLE RACES:</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                          Select a Category:
+                        </h1>
+                        <!-- Images made for race banners were sourced from here:
+                        Klingon Logo:
+
+                        https://wiki.fed-space.com/index.php?title=File:Klingon_logo.png
+                        http://www.ing.iac.es/PR/science/ic1396.jpg
+                        
+                        Romulan Logo:
+                        
+                        http://memory-gamma.wikia.com/wiki/File:Romulan_Star_Empire_logo.png
+                        https://www.pinterest.com/pin/445926800584058813/
+                        
+                        Borg Logo:
+                        
+                        http://memory-alpha.wikia.com/wiki/File:Borg_flag.png
+                        https://jenteva.com/space-nebula-digital-painting
+                        
+                        Dominion Logo:
+                        
+                        https://www.kisspng.com/png-dominion-star-trek-romulan-logo-united-federation-1553690/
+                        https://fineartamerica.com/featured/space-background-with-purple-nebula-and-stars-peter-jurik.html
+                        
+                        Cardassian Logo:
+                        
+                        http://botf2.square7.ch/wiki/index.php?title=Cardassians
+                        https://www.wallpaperup.com/3193/Golden_nebula.html
+                        
+                        Gorn Logo:
+                        
+                        https://www.giantbomb.com/gorn/3015-7475/
+                        https://www.wallpapervortex.com/wallpaper-43364_nebula_orange_yellow_nebula.html#.XAWIOmgzZPY
+                        
+                        Federation Logo:
+                        
+                        http://wallpaperswide.com/blue_nebula-wallpapers.html
+                        https://www.amazon.de/Flagge-Vereinigten-F%C3%B6deration-Planeten-Langlebig/dp/B01M0PUNWO
+                        -->
+                        
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/fed_logo.jpg" alt="Federation" style="border: 2px solid blue">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="FEDERATION" onclick="play2();delayNav5()" style="background-color: rgb(153,168,255)">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/klingon_logo.jpg" alt="Klingon" style="border: 2px solid red">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="KLINGON" onclick="play2();" style="background-color: crimson">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/romulan_logo.jpg" alt="Romulan" style="border: 2px solid green">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="ROMULAN" onclick="play2();" style="background-color: teal">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/cardassians_logo.jpg" alt="Cardassian" style="border: 2px solid gold">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="CARDASSIAN" onclick="play2();" style="background-color: gold">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/borg.jpg" alt="Borg" style="border: 2px solid grey">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="BORG" onclick="play2();" style="background-color: teal">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/dominion_logo.jpg" alt="Dominion" style="border: 2px solid violet">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="DOMINION" onclick="play2();" style="background-color: purple">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/gorn_logo.jpg" alt="Gorn" style="border: 2px solid orange">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="GORN" onclick="play2();" style="background-color: orange">
+                                            <audio id="beep2" src="sounds/work_beep5.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>
+                </footer>
+            </div>
+           </div> 
+        </body>
+</html>
+        

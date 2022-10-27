@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+ </head>
+<style>
+::-webkit-scrollbar {
+        width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(153,153,255);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(206,201,255);
+}
+#toggle {
+                display: none;
+                position: absolute;
+                background-color: gold;
+                width: 220px;
+                height: 400px;
+                margin-left: 170px;
+                margin-top: -83px;
+                border-radius: 20px;
+                z-index: 10;
+            }
+            #toggle input {
+                height: 60px;
+                width: 180px;
+                border-radius: 20px;
+                font-family: 'Nova', sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                letter-spacing: 2px;
+                outline: none;
+                cursor: pointer;
+                vertical-align: bottom;
+            }
+            .middle {
+                position: absolute;
+                height: 100%;
+                width: 75%;
+                left: 25px;
+                background-color: black;
+            }
+            .bracket {
+                position: absolute;
+                top: 10px;
+                left: 7px;
+                width: 200px;
+                height: 380px;
+                border-radius: 20px;
+                overflow-y: auto;
+                background-color: black;
+            }
+            .federation {
+                border: none;
+                width: 160px;
+                margin-top: 10px;
+                background-color: rgb(153,153,255);
+            }
+            .federation:hover {
+                background-color: rgb(206, 201, 255);
+            }
+            .klingon {
+                border: none;
+                width: 160px;
+                margin-top: 3px;
+                background-color: rgb(204,102,102);
+            }
+            .klingon:hover {
+                background-color: rgb(221,137,137);
+            }
+</style>
+<script>
+        function play7() {
+                var audio = document.getElementById("beep7");
+                audio.play();
+            }
+            
+            function setURL(url) {
+            document.getElementById('iframe').src = url;
+            }
+</script>
+    
+    <body>
+     <div class="toggle">
+        <input type="button" class="federation" value="FEDERATION" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="KLINGON" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="ROMULAN" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="CARDASSIAN" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="BORG" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="DOMINION" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+        <input type="button" class="klingon" value="GORN" onclick="play7();setURL('federation_erasframe.html');">
+        <audio id="beep7" src="sounds/work_beep3.mp3"></audio>
+     </div>
+    </body>
+</html>

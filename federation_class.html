@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        ST:Continuum Database
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .slider {
+                position: absolute;
+                top: 550px;
+                left: 23px;
+                width: 850px;
+                height: 150px;
+                padding-top: 10px;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            .slider img {
+                width: 175px;
+                border: 2px solid rgb(153,153,206);
+                border-radius: 30px;
+            }
+            .slider img:hover {
+                
+            }
+            #imgdisplay {
+                position: absolute;
+                height: 480px;
+                width: 850px;
+                top: 35px;
+                left: 25px;
+                border: 1px solid rgb(252,206,0);
+                border-radius: 30px;
+                background-size: 850px 480px;
+            }
+            .default {
+                background-image: url(images/large/federation_class1.jpg);
+            }
+            .pic01 {
+                background-image: url(images/large/federation_class1.jpg);
+                border-radius: 30px;
+            }
+            .pic02 {
+                background-image: url(images/large/federation_class2.jpg);
+                border-radius: 30px;
+            }
+            .pic03 {
+                background-image: url(images/large/federation_class3.jpg);
+                border-radius: 30px;
+            }
+            .pic04 {
+                background-image: url(images/large/federation_class4.jpg);
+                border-radius: 30px;
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('fed_tos.html'); }, 2000);
+            }
+        </script>
+    </head>
+        <body>
+           <div id="master">
+            <div id="wrapper">
+                <header>
+                    <div class="lcars_head"></div>
+                    <div class="lcars_title"><a href="main.html" style="text-decoration: none; color: rgb(255,144,0);">ST: CONTINUUM &#8226; MAIN</a></div>
+                    <div class="square1"></div>
+                </header>
+                <nav>
+                    <ul id="menu-box">
+                        <li>
+                            <input type="button" class="about" value="ABOUT US" onclick="play1();delayNav()">
+                            <audio id="beep1" src="sounds/beep4.mp3"></audio>
+                            
+                        </li>
+                        <li>
+                            <input type="button" class="ships" value="SHIPS AND ERAS" onclick="play3();delayNav2()">
+                            <audio id="beep3" src="sounds/beep_2.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="downloads" value="DOWNLOADS" onclick="play5();delayNav4()">
+                            <audio id="beep5" src="sounds/processing3.mp3"></audio>
+                        </li>
+                        <li>
+                            <input type="button" class="gallery" value="GALLERY/TRAILERS" onclick="play6();">
+                            <audio id="beep6" src="sounds/alert20.mp3"></audio>
+                        </li>
+                        <li>
+                           <input type="button" class="hail" value="CONTACT US" onclick="play4();delayNav3()">
+                            <audio id="beep4" src="sounds/hail.mp3"></audio>
+                        </li>
+                        <li><img src="images/data1.gif" alt="arbitrary flashing buttons"></li>
+                        <li><img src="images/data.gif" alt="scrolling data"></li>
+                    </ul>
+                </nav>
+                <main>
+                    <div class="lcars_body">
+                        <div class="lcars_iframe5">
+                            <div class="iframe_body5">
+                                <div id="imgdisplay" class="default">
+                                   
+                                </div>
+                                <div class="slider">
+                                   <img src="images/small/federation_class1.jpg" onclick="imgdisplay.setAttribute('class','pic01');play1();" alt="Federation Class">
+                                   <img src="images/small/federation_class2.jpg" onclick="imgdisplay.setAttribute('class','pic02');play1();" alt="Federation Class">
+                                   <img src="images/small/federation_class3.jpg" onclick="imgdisplay.setAttribute('class','pic03');play1();" alt="Federation Class">
+                                   <img src="images/small/federation_class4.jpg" onclick="imgdisplay.setAttribute('class','pic04');play1();" alt="Federation Class"> 
+                                </div>
+                        </div>
+                        <br><p></p>
+                        <div class="title1"><p>FEDERATION CLASS: BY MAJOR_STRESS</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1>
+                          Background Information:
+                        </h1>
+                        <aside>
+                            <table class="fed_table">
+                                <thead>
+                                    <th colspan="3">
+                                        FEDERATION CLASS
+                                    </th>
+                                </thead>
+                                <tr rowspan="3">
+                                    <td>
+                                        Owner:
+                                    </td>
+                                    <td>
+                                        United Federation of Planets
+                                    </td>
+                                    <td rowspan="4" style="background-color: rgb(102,4,4);">
+                                        <iframe src="https://sketchfab.com/models/11cee568735d4a7d88c630f8b54f6325/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<figcaption style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/11cee568735d4a7d88c630f8b54f6325?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Federation Class Dreadnought Ver.2</a>
+    by <a href="https://sketchfab.com/MajorStress?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Major Stress</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</figcaption>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Operator:
+                                    </td>
+                                    <td>
+                                        Starfleet
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Type:
+                                    </td>
+                                    <td>
+                                        Dreadnought
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Active:
+                                    </td>
+                                    <td>
+                                        23rd Century
+                                    </td>
+                                </tr>
+                            </table>
+                        </aside>
+                        <p>The Federation-class was a type of 23rd century Federation dreadnought-type starships operated by Starfleet.</p>
+                        <p>Based on the standard Starfleet design tree and hull components of the time, the Federation-class starships were bulkier sisters of the Constitution-class heavy cruisers. The dreadnoughts employed a different arrangement from Constitution-class, including a forward-facing shuttle bay, a four dish sensor/navigational deflector / tractor beam dish arrangement (including a single aft sensor dish) and most prominently, a third nacelle, all design elements largely abandoned in future starship development. (Star Trek: The Motion Picture; Star Trek II: The Wrath of Khan; Star Trek III: The Search for Spock)</p>
+                        <p>
+                            The Federation-class starship was originally seen on a display in the Starfleet Academy's training simulation in Star Trek II: The Wrath of Khan. The display was a page pulled directly from Franz Joseph's Star Fleet Technical Manual.</p>
+<p>
+The Technical Manual lists the USS Federation as being the prototype of the class.</p>
+<p>
+The Motion Picture originally contained a voice-over in the beginning of the film for the dreadnought USS Entente, NCC-2120. This was a direct reference to the Technical Manual and its entries for Federation-class dreadnoughts. (The manual was heavily used as a reference for the first film.) While this line of dialogue remains intact on the laser-disk, VHS, and Beta releases of the film, the Director's Cut DVD explicitly muddles the track, making the line difficult to hear.
+</p>
+<p>
+The concept of a three-nacelle starship has been derided by some as contrary to Gene Roddenberry's design requirements for Starfleet ships, violating both the "pairs" rule and the "nacelle line of sight" rule, but there is nothing in canon that mandates these rules (it is also possible that three-nacelle starships used only two of their nacelles at any given time, and the third is considered as spare, in case one of used nacelles would be rendered inoperable).
+</p><p>
+There are two ships that violate the "pairs" rules: the Niagara-class and the "off-timeline" version of the Galaxy-class are canon three-nacelled ships. There are many ships that violate the line of sight rules as well as several single nacelle vessels, including the Freedom-class, Kelvin-type, and Saladin-class. It is worth noting that Gene Roddenberry personally signed off on the Federation class in 1973, the schematic for the class is seen in canon, and one of her class is explicitly mentioned in the only Star Trek movie of which Gene Roddenberry himself was in charge.
+                        </p>
+  
+                    </div>
+                </main>
+                <footer>
+                    <div class="lcars_footer"></div>
+                    <div class="square2"></div>
+                    <p>*All creative content related to Star Trek&#8482; are copyrighted by Paramount Pictures&copy;</p>
+                </footer>
+            </div>
+           </div> 
+        </body>
+</html>
+        

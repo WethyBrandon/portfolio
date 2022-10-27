@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <title>
+        Brandon Wethy - Portfolio
+        </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Brandon Wethy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/stc_icon.png" type="images/stc_icon.ico" />
+
+        <style>
+            .body {
+             color: white;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(153,153,255);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(206,201,255);
+            }
+        </style>
+        <script>
+            function play1() {
+                var audio = document.getElementById("beep1");
+                audio.play();
+            }
+            
+            function play2() {
+                var audio = document.getElementById("beep2");
+                audio.play();
+            }
+            
+            function play3() {
+                var audio = document.getElementById("beep3");
+                audio.play();
+            }
+            function play4() {
+                var audio = document.getElementById("beep4");
+                audio.play();
+            }
+            function play5() {
+                var audio = document.getElementById("beep5");
+                audio.play();
+            }
+            function play6() {
+                var audio = document.getElementById("beep6");
+                audio.play();
+            }
+            
+            function setURL(url) {
+            document.getElementById('iframe').src = url;
+            }
+            
+            function delayNav(){
+                setTimeout(function(){ window.location.assign('us.html'); }, 500);
+            }
+            
+            function delayNav2(){
+                setTimeout(function(){ window.location.assign('races.html'); }, 1000);
+            }
+            function delayNav3(){
+                setTimeout(function(){ window.location.assign('contact.html'); }, 2000);
+            }
+            function delayNav4(){
+                setTimeout(function(){ window.location.assign('downloads.html'); }, 2000);
+            }
+            function delayNav5(){
+                setTimeout(function(){ window.location.assign('federation_classframe.html'); }, 500);
+            }
+            function delayNav6(){
+                setTimeout(function(){ window.location.assign('andorianframe.html'); }, 500);
+            }
+            function delayNav7(){
+                setTimeout(function(){ window.location.assign('typhonframe.html'); }, 500);
+            }
+        </script>
+ </head>
+ <body>
+<div class="body">
+                        <div class="lcars_iframe">
+                            <div class="iframe_body"><p>VOYAGER &#8226; DESIGNED DREAMER</p></div>
+                        <iframe width="750" height="350" src="https://www.youtube.com/embed/AesGuSVT5-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="title"><p>HIGHLIGHTS</p><img src="images/divider.gif" alt="divider"></div>
+                        <h1 style="margin-top: -25px;">
+                           Hailing Frequencies Open!
+                        </h1>
+                        <p>
+                            Today I will be displaying some of my new, unreleased works to the public! It's not much, as I am a terrible texture artist, but I hope you enjoy them! You can check them out here in the tabs below, or tap the "My Works" button and find it there under "3D Models". Enjoy!
+                        </p>
+                        <p>
+                            Just click on the tabs below to see a screenshot!
+                        <div class="list_ul">
+                            <ul>
+                                <li>
+                                    <figure><img src="images/dooms.jpg" alt="Planet Killer" style="border: 2px solid gold;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="DOOMSDAY MACHINE" onclick="play2();delayNav5();" style="background-color: gold;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/andorian.jpg" alt="Andorian" style="border: 2px solid rgb(0, 12, 255);">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="ANDORIAN CRUISER" onclick="play2();delayNav6();" style="background-color: blue;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="images/typhon.jpg" alt="Typhon" style="border: 2px solid violet;">
+                                        <figcaption>
+                                            <input type="button" class="list_button" value="TYPHON CLASS" onclick="play2();delayNav7();" style="background-color: purple;">
+                                            <audio id="beep2" src="sounds/work_beep.mp3"></audio>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <div class="title" style="margin-top: -25px;"><p>CONSIDERATION</p><img src="images/divider.gif" alt="divider"></div>
+                        <p style="margin-top: -25px;">
+                            As always, I recommend subscribing to the mod I volunteer with up on the Steam Workshop. This allows immediate access to updates and makes it easier on us devs to get hot fixes out to you in a timely fashion. That way, you don't have to been Hirogen Hunter to find our updates.
+                            <div class="stc_logo">
+                            <a href="downloads.html"><img src="images/logo.jpg" alt="ST:Continuum Banner"></a>
+                            <!-- Image was made by the team at Continuum Corp Mod Group. Steam Logo belongs to Valve -->
+                            </div>
+                        </p>
+                    </div>
+                </main>
+            </div>
+           </div>
+ </body>
+</html>
